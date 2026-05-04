@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "name": "il-castello-proyecto",
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/$1" }
+  ]
+}
