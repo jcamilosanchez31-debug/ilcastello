@@ -10,7 +10,9 @@
     --font-heading: 'Playfair Display', serif;
     --font-body: 'Inter', sans-serif;
     
-    --transition-smooth: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    --transition-smooth: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    --shadow-premium: 0 20px 40px rgba(0,0,0,0.1);
+    --glass-bg: rgba(255, 255, 255, 0.7);
 }
 
 /* Reset & Base */
@@ -141,6 +143,31 @@ nav.scrolled .nav-container {
     transition: all 0.3s ease;
 }
 
+/* Organic Shapes Background */
+.organic-shape {
+    position: absolute;
+    z-index: -1;
+    filter: blur(80px);
+    opacity: 0.4;
+    border-radius: 50%;
+}
+
+.shape-1 {
+    width: 400px;
+    height: 400px;
+    background: var(--color-indiscreet);
+    top: -100px;
+    right: -100px;
+}
+
+.shape-2 {
+    width: 300px;
+    height: 300px;
+    background: var(--color-mustard);
+    bottom: 100px;
+    left: -50px;
+}
+
 /* Hero Section */
 .hero {
     height: 100vh;
@@ -159,39 +186,60 @@ nav.scrolled .nav-container {
 }
 
 .hero h2 {
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 700;
     margin-bottom: 1rem;
     color: var(--color-egret);
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    text-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    letter-spacing: -1px;
 }
 
 .hero p {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-bottom: 2.5rem;
     font-family: var(--font-heading);
     color: var(--color-stone);
+    font-style: italic;
 }
 
 .btn {
     display: inline-block;
-    padding: 1rem 2.5rem;
+    padding: 1.2rem 3rem;
     background-color: var(--color-indiscreet);
     color: var(--color-white);
     text-decoration: none;
     font-weight: 600;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    border-radius: 4px;
+    border-radius: 50px;
     transition: var(--transition-smooth);
     border: 2px solid var(--color-indiscreet);
+    box-shadow: 0 10px 20px rgba(169, 58, 58, 0.3);
+    position: relative;
+    overflow: hidden;
 }
 
 .btn:hover {
-    background-color: transparent;
-    color: var(--color-egret);
-    border-color: var(--color-egret);
-    transform: translateY(-3px);
+    background-color: var(--color-white);
+    color: var(--color-indiscreet);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(169, 58, 58, 0.4);
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.3), transparent);
+    transform: rotate(45deg);
+    transition: 0.5s;
+}
+
+.btn:hover::after {
+    left: 100%;
 }
 
 /* Sections */
@@ -222,20 +270,25 @@ nav.scrolled .nav-container {
 }
 
 .card, .text-block {
-    background: var(--color-white);
-    padding: 2.5rem 2rem;
-    border-radius: 8px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: var(--shadow-premium);
     transition: var(--transition-smooth);
-    border-bottom: 4px solid transparent;
+    border: 1px solid rgba(255,255,255,0.3);
     position: relative;
     overflow: hidden;
 }
 
 .text-block {
     margin-bottom: 2rem;
-    padding: 3rem;
-    border-left: 5px solid var(--color-mustard);
+    border-left: 8px solid var(--color-mustard);
+}
+
+.text-block:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.12);
 }
 
 .text-block h3 {
@@ -380,8 +433,52 @@ footer h2 {
 
 .dofa-grid img {
     max-width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    box-shadow: var(--shadow-premium);
+    transition: var(--transition-smooth);
+}
+
+.dofa-grid img:hover {
+    transform: scale(1.02) translateY(-10px);
+}
+
+/* Feature Image Section */
+.feature-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    margin: 4rem 0;
+}
+
+.feature-img-container {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow-premium);
+}
+
+.feature-img-container img {
+    width: 100%;
+    display: block;
+    transition: var(--transition-smooth);
+}
+
+.feature-img-container:hover img {
+    transform: scale(1.1);
+}
+
+.feature-content h3 {
+    font-size: 2.5rem;
+    color: var(--color-indiscreet);
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .feature-section {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
 }
 
 /* Export Timeline */
