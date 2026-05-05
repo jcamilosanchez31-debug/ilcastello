@@ -40,11 +40,11 @@ h1, h2, h3, h4, .logo {
 }
 
 .logo {
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 1.6rem;
+    font-weight: 800;
     color: var(--color-indiscreet);
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 h2.section-title {
@@ -84,8 +84,8 @@ nav.scrolled {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 5%;
-    max-width: 1400px;
+    padding: 1rem 3%;
+    max-width: 1600px;
     margin: 0 auto;
     transition: var(--transition-smooth);
 }
@@ -97,18 +97,19 @@ nav.scrolled .nav-container {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 2rem;
+    gap: 1.2rem;
 }
 
 .nav-links a {
     text-decoration: none;
     color: var(--color-stone);
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 0.75rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     transition: var(--transition-smooth);
     position: relative;
+    white-space: nowrap;
 }
 
 .nav-links a::after {
