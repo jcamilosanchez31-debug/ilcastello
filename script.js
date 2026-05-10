@@ -118,4 +118,37 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 100);
         });
     }
+
+    // Analysis Module: Intersection Observer for Section Navigation
+    const analysisLinks = document.querySelectorAll('.sec-nav a');
+    if (analysisLinks.length > 0) {
+        const analysisObserver = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    const id = e.target.id;
+                    analysisLinks.forEach(l => {
+                        l.classList.toggle('active', l.getAttribute('href') === '#' + id);
+                    });
+                }
+            });
+        }, { rootMargin: '-20% 0px -60% 0px' });
+        
+        document.querySelectorAll('.analysis-module .section').forEach(s => analysisObserver.observe(s));
+    }
 });
+
+// Country Switcher for Analysis Module
+function switchCountry(country, el) {
+    document.querySelectorAll('.ctab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.country-panel').forEach(p => p.classList.remove('active'));
+    el.classList.add('active');
+    const panel = document.getElementById('panel-' + country);
+    if (panel) panel.classList.add('active');
+    const nav = document.getElementById('sec-nav');
+    if (nav) nav.style.display = (country === 'compare') ? 'none' : 'flex';
+}
+
+function navClick(el) {
+    document.querySelectorAll('.sec-nav a').forEach(a => a.classList.remove('active'));
+    el.classList.add('active');
+}
