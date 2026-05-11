@@ -22,6 +22,7 @@
                 <li><a href="#esencia">Esencia</a></li>
                 <li><a href="#paises">Pa&iacute;ses</a></li>
                 <li><a href="#entorno">Entorno</a></li>
+                <li><a href="#graficas-entorno">Gr&aacute;ficas</a></li>
                 <li><a href="#canvas">Canvas</a></li>
                 <li><a href="#powerbi">Power BI</a></li>
                 <li><a href="#exportacion">Log&iacute;stica</a></li>
@@ -420,6 +421,68 @@
         </div>
     </section>
 
+
+    <!-- Graficas Power BI - Entorno -->
+    <section id="graficas-entorno" class="section bg-dark" style="padding: 3rem 0;">
+        <div class="container">
+            <h2 class="section-title text-light" style="margin-bottom:0.5rem;">Visualizaciones de Entorno</h2>
+            <p class="section-subtitle text-light" style="margin-bottom:2.5rem;">An&aacute;lisis gr&aacute;fico comparativo de los 5 pa&iacute;ses · Fuente: Power BI</p>
+
+            <!-- Tab selector -->
+            <div style="display:flex;gap:10px;margin-bottom:2rem;flex-wrap:wrap;">
+                <button onclick="showChartGroup('politico',this)" class="chart-tab-btn active" id="btn-politico">&#9878; Pol&iacute;tico y Legal</button>
+                <button onclick="showChartGroup('cultural',this)" class="chart-tab-btn" id="btn-cultural">&#127760; Cultural</button>
+            </div>
+
+            <!-- POLITICO Y LEGAL -->
+            <div id="charts-politico" class="chart-group" style="display:block;">
+                <div class="charts-grid">
+                    <div class="chart-card">
+                        <div class="chart-label">Arancel pasta desde Colombia (%)<br><small>0%=libre &middot; rojo=tiene costo</small></div>
+                        <canvas id="chartArancel" height="160"></canvas>
+                    </div>
+                    <div class="chart-card">
+                        <div class="chart-label">Salario m&iacute;nimo (USD/mes)</div>
+                        <canvas id="chartSalario" height="160"></canvas>
+                    </div>
+                    <div class="chart-card">
+                        <div class="chart-label">&Iacute;ndice de corrupci&oacute;n por pa&iacute;s<br><small>0=muy corrupto &middot; 100=muy limpio</small></div>
+                        <canvas id="chartCorrup" height="160"></canvas>
+                    </div>
+                    <div class="chart-card">
+                        <div class="chart-label">Dificultad normas sanitarias importaci&oacute;n<br><small>1=f&aacute;cil &middot; 5=muy dif&iacute;cil</small></div>
+                        <canvas id="chartNormas" height="160"></canvas>
+                    </div>
+                    <div class="chart-card">
+                        <div class="chart-label">Estabilidad del gobierno<br><small>Fuente: Banco Mundial WGI</small></div>
+                        <canvas id="chartEstabilidad" height="160"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CULTURAL -->
+            <div id="charts-cultural" class="chart-group" style="display:none;">
+                <div class="charts-grid">
+                    <div class="chart-card">
+                        <div class="chart-label">Consumo pasta per c&aacute;pita (kg/a&ntilde;o)</div>
+                        <canvas id="chartPasta" height="160"></canvas>
+                    </div>
+                    <div class="chart-card">
+                        <div class="chart-label">Afinidad cocina italiana (% preferencia)</div>
+                        <canvas id="chartItaliana" height="160"></canvas>
+                    </div>
+                    <div class="chart-card">
+                        <div class="chart-label">Poblaci&oacute;n urbana (%)</div>
+                        <canvas id="chartUrban" height="160"></canvas>
+                    </div>
+                    <div class="chart-card">
+                        <div class="chart-label">Indulgencia / apertura al gasto (IVR Hofstede)<br><small>0=austero &middot; 100=muy abierto</small></div>
+                        <canvas id="chartIVR" height="160"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- An&aacute;lisis de Internacionalizaci&oacute;n por Pa&iacute;s -->
     <section id="paises" class="section bg-light" style="padding-top: 0;">
         <div class="container">
@@ -2892,6 +2955,124 @@
     </footer>
 
     <script src="script.js"></script>
+
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script>
+    // Chart tab switcher
+    function showChartGroup(group, btn) {
+        document.querySelectorAll('.chart-group').forEach(g => g.style.display = 'none');
+        document.querySelectorAll('.chart-tab-btn').forEach(b => b.classList.remove('active'));
+        document.getElementById('charts-' + group).style.display = 'block';
+        btn.classList.add('active');
+    }
+
+    const paises5  = ['Argentina','Brasil','El Salvador','México','Perú'];
+    const paises4  = ['Brasil','El Salvador','México','Perú'];
+    const colors5  = ['#3b82f6','#f97316','#8b5cf6','#10b981','#ec4899'];
+    const colors4  = ['#3b82f6','#8b5cf6','#10b981','#ec4899'];
+    const defOpts = (title) => ({
+        responsive:true, plugins:{ legend:{display:false}, title:{display:false} },
+        scales:{ x:{ticks:{color:'#374151',font:{size:11}}}, y:{ticks:{color:'#6b7280',font:{size:10}}, grid:{color:'#e5e7eb'} } }
+    });
+
+    // ── POLITICO Y LEGAL ──────────────────────────────
+    // 1. Arancel (horizontal bar)
+    new Chart(document.getElementById('chartArancel'), {
+        type:'bar',
+        data:{
+            labels: paises4,
+            datasets:[{ data:[10,0,0,0], backgroundColor:['#ef4444','#10b981','#10b981','#10b981'], borderRadius:5 }]
+        },
+        options:{...defOpts(), indexAxis:'y', plugins:{legend:{display:false}},
+            scales:{ x:{min:0,max:12,ticks:{color:'#6b7280'}}, y:{ticks:{color:'#374151',font:{size:11}}} }}
+    });
+
+    // 2. Salario mínimo USD
+    new Chart(document.getElementById('chartSalario'), {
+        type:'bar',
+        data:{
+            labels: paises4,
+            datasets:[{ data:[265,365,207,310], backgroundColor: colors4, borderRadius:5 }]
+        },
+        options:{...defOpts(), plugins:{legend:{display:false}},
+            scales:{ x:{ticks:{color:'#374151'}}, y:{ticks:{color:'#6b7280'}} }}
+    });
+
+    // 3. Corrupción IPC (pie)
+    new Chart(document.getElementById('chartCorrup'), {
+        type:'pie',
+        data:{
+            labels: paises4,
+            datasets:[{ data:[36,33,31,37], backgroundColor: colors4 }]
+        },
+        options:{ responsive:true, plugins:{legend:{position:'right', labels:{color:'#374151',font:{size:11}}}} }
+    });
+
+    // 4. Dificultad normas sanitarias (doughnut)
+    new Chart(document.getElementById('chartNormas'), {
+        type:'doughnut',
+        data:{
+            labels: ['Brasil (4.20)','El Salvador (3.20)','México (3.80)','Perú (3.50)'],
+            datasets:[{ data:[4.20,3.20,3.80,3.50], backgroundColor: colors4 }]
+        },
+        options:{ responsive:true, plugins:{legend:{position:'right', labels:{color:'#374151',font:{size:11}}}} }
+    });
+
+    // 5. Estabilidad gobierno WGI (doughnut)
+    new Chart(document.getElementById('chartEstabilidad'), {
+        type:'doughnut',
+        data:{
+            labels: ['Brasil (0.05)','El Salvador (0.01)','México (0.05)','Perú (0.05)'],
+            datasets:[{ data:[0.05,0.01,0.05,0.05], backgroundColor: colors4 }]
+        },
+        options:{ responsive:true, plugins:{legend:{position:'right', labels:{color:'#374151',font:{size:11}}}} }
+    });
+
+    // ── CULTURAL ──────────────────────────────────────
+    // 6. Consumo pasta kg/año (horizontal bar)
+    new Chart(document.getElementById('chartPasta'), {
+        type:'bar',
+        data:{
+            labels: paises5,
+            datasets:[{ data:[14,6,3,8,11], backgroundColor: colors5, borderRadius:5 }]
+        },
+        options:{...defOpts(), indexAxis:'y', plugins:{legend:{display:false}},
+            scales:{ x:{min:0,max:15,ticks:{color:'#6b7280'}}, y:{ticks:{color:'#374151',font:{size:11}}} }}
+    });
+
+    // 7. Afinidad italiana (pie)
+    new Chart(document.getElementById('chartItaliana'), {
+        type:'pie',
+        data:{
+            labels: paises5,
+            datasets:[{ data:[90,60,20,45,35], backgroundColor: colors5 }]
+        },
+        options:{ responsive:true, plugins:{legend:{position:'right', labels:{color:'#374151',font:{size:11}}}} }
+    });
+
+    // 8. Población urbana %
+    new Chart(document.getElementById('chartUrban'), {
+        type:'bar',
+        data:{
+            labels: paises5,
+            datasets:[{ data:[92.3,87.6,74.5,81.9,78.1], backgroundColor: colors5, borderRadius:5 }]
+        },
+        options:{...defOpts(), plugins:{legend:{display:false}},
+            scales:{ x:{ticks:{color:'#374151'}}, y:{min:60,max:100,ticks:{color:'#6b7280',callback: v=>v+'%'}} }}
+    });
+
+    // 9. IVR Hofstede
+    new Chart(document.getElementById('chartIVR'), {
+        type:'bar',
+        data:{
+            labels: paises5,
+            datasets:[{ data:[62,59,89,97,83], backgroundColor: colors5, borderRadius:5 }]
+        },
+        options:{...defOpts(), plugins:{legend:{display:false}},
+            scales:{ x:{ticks:{color:'#374151'}}, y:{min:0,max:100,ticks:{color:'#6b7280'}} }}
+    });
+    </script>
 </body>
 </html>
 
