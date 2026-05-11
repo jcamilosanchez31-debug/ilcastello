@@ -736,3 +736,72 @@ footer h2 {
         font-size: 1.2rem;
     }
 }
+
+/* ── CHARTS SECTION ─────────────────────────────── */
+.charts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.chart-card {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 14px;
+    padding: 1.2rem 1.4rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chart-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+}
+
+.chart-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #c8860a;
+    margin-bottom: 0.8rem;
+    line-height: 1.4;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.chart-label small {
+    display: block;
+    color: #7a9ab0;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0;
+    margin-top: 2px;
+}
+
+.chart-tab-btn {
+    padding: 9px 20px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.08);
+    color: #a0b8c8;
+    transition: all 0.3s;
+}
+
+.chart-tab-btn:hover {
+    background: rgba(200,134,10,0.2);
+    color: #c8860a;
+    border-color: #c8860a;
+}
+
+.chart-tab-btn.active {
+    background: #c8860a;
+    color: #0d1b2a;
+    border-color: #c8860a;
+}
+
+@media (max-width: 768px) {
+    .charts-grid {
+        grid-template-columns: 1fr;
+    }
+}
