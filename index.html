@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="analysis.css">
+    <link rel="stylesheet" href="matrix_entorno.css">
 </head>
 <body>
     <!-- Navbar -->
@@ -20,6 +21,7 @@
                 <li><a href="#acuerdos">Acuerdos</a></li>
                 <li><a href="#esencia">Esencia</a></li>
                 <li><a href="#paises">Pa&iacute;ses</a></li>
+                <li><a href="#entorno">Entorno</a></li>
                 <li><a href="#canvas">Canvas</a></li>
                 <li><a href="#powerbi">Power BI</a></li>
                 <li><a href="#exportacion">Log&iacute;stica</a></li>
@@ -241,6 +243,178 @@
                         <li><strong>Calificaci&oacute;n Promedio:</strong> 3 (Estabilidad moderada con riesgos puntuales)</li>
                         <li><strong>Puntajes:</strong> El Salvador (5), M&eacute;xico (4), Per&uacute; (4), Brasil (3), Colombia (3), Argentina (1)</li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Matriz de Entorno (Excel) -->
+    <section id="entorno" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Matriz de Entorno Comparativa</h2>
+            <p class="section-subtitle">Datos consolidados del Scorecard multidimensional.</p>
+            
+            <div class="matrix-module animate-up">
+                <div class="matrix-tabs">
+                    <div class="m-tab active" onclick="switchMatrix('viabilidad', this)">Scorecard de Viabilidad</div>
+                    <div class="m-tab" onclick="switchMatrix('cultural', this)">Matriz Cultural (Hofstede)</div>
+                    <div class="m-tab" onclick="switchMatrix('fuentes', this)">Fuentes y Referencias</div>
+                </div>
+
+                <!-- Panel Viabilidad -->
+                <div id="m-viabilidad" class="m-panel active">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Criterio / Pa&iacute;s</th>
+                                <th>Per&uacute; 🇵🇪</th>
+                                <th>El Salvador 🇸🇻</th>
+                                <th>M&eacute;xico 🇲🇽</th>
+                                <th>Brasil 🇧🇷</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tama&ntilde;o de Mercado (Demograf&iacute;a)</td>
+                                <td>8.0</td>
+                                <td>5.5</td>
+                                <td class="gold">9.5</td>
+                                <td>9.0</td>
+                            </tr>
+                            <tr>
+                                <td>Afinidad Gastronom&iacute;a Italiana</td>
+                                <td>8.5</td>
+                                <td>5.0</td>
+                                <td>9.0</td>
+                                <td class="gold">9.5</td>
+                            </tr>
+                            <tr>
+                                <td>Facilidad Legal / Normativa</td>
+                                <td>6.0</td>
+                                <td class="gold">7.5</td>
+                                <td>6.5</td>
+                                <td>5.5</td>
+                            </tr>
+                            <tr>
+                                <td>Infraestructura Log&iacute;stica</td>
+                                <td class="gold">8.5</td>
+                                <td>6.0</td>
+                                <td class="gold">8.5</td>
+                                <td>7.5</td>
+                            </tr>
+                            <tr>
+                                <td>Actividad Mercado de Pasta</td>
+                                <td>9.0</td>
+                                <td>5.0</td>
+                                <td class="gold">9.5</td>
+                                <td>8.5</td>
+                            </tr>
+                            <tr>
+                                <td>Acuerdos Comerciales (TLC)</td>
+                                <td class="gold">10.0</td>
+                                <td>9.0</td>
+                                <td>9.0</td>
+                                <td>7.0</td>
+                            </tr>
+                            <tr>
+                                <td>Ambiente de Inversi&oacute;n</td>
+                                <td>6.0</td>
+                                <td>7.0</td>
+                                <td class="gold">8.0</td>
+                                <td>7.5</td>
+                            </tr>
+                            <tr style="background: #f4f6fa; font-weight: 800;">
+                                <td>PUNTAJE TOTAL (/100)</td>
+                                <td class="score-pill mid">73</td>
+                                <td class="score-pill low">61</td>
+                                <td class="score-pill high">78</td>
+                                <td class="score-pill high">76</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Veredicto</strong></td>
+                                <td style="color: #c8860a"><strong>A&ntilde;o 1: Prioridad</strong></td>
+                                <td>A&ntilde;o 2: Hub Regional</td>
+                                <td style="color: #27500a">A&ntilde;o 3: Escala</td>
+                                <td>A&ntilde;o 4: Consolidaci&oacute;n</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Panel Cultural -->
+                <div id="m-cultural" class="m-panel">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Indicador Cultural</th>
+                                <th>Per&uacute; 🇵🇪</th>
+                                <th>El Salvador 🇸🇻</th>
+                                <th>M&eacute;xico 🇲🇽</th>
+                                <th>Brasil 🇧🇷</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Indulgencia (IVR)</strong><br><small>Apertura al gasto y disfrute</small></td>
+                                <td>83</td>
+                                <td>89</td>
+                                <td class="gold">97</td>
+                                <td>59</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Distancia al Poder (PDI)</strong><br><small>Aceptaci&oacute;n de jerarqu&iacute;a</small></td>
+                                <td>64</td>
+                                <td>66</td>
+                                <td class="gold">81</td>
+                                <td>69</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Urbanizaci&oacute;n (%)</strong><br><small>Poblaci&oacute;n en ciudades</small></td>
+                                <td>78.1%</td>
+                                <td>74.5%</td>
+                                <td>81.9%</td>
+                                <td class="gold">87.6%</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Consumo Pasta (kg/a&ntilde;o)</strong><br><small>Por persona</small></td>
+                                <td class="gold">11.0</td>
+                                <td>3.0</td>
+                                <td>8.0</td>
+                                <td>6.0</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Afinidad Cocina Italiana</strong><br><small>% Preferencia estimada</small></td>
+                                <td>35%</td>
+                                <td>20%</td>
+                                <td>45%</td>
+                                <td class="gold">60%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Panel Fuentes -->
+                <div id="m-fuentes" class="m-panel">
+                    <div style="max-height: 400px; overflow-y: auto;">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Entorno</th>
+                                    <th>Indicador</th>
+                                    <th>Fuente Oficial</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Cultural</td><td>Hofstede Insights</td><td>Hofstede-Insights.com</td></tr>
+                                <tr><td>Demograf&iacute;a</td><td>Tasa Urbanizaci&oacute;n</td><td>Banco Mundial / ONU</td></tr>
+                                <li>Consumo Pasta</td><td>IPO (Int. Pasta Org.)</td><td>InternationalPasta.org</td></tr>
+                                <tr><td>Legal</td><td>TLC y Aranceles</td><td>Ministerio de Comercio (tlc.gov.co)</td></tr>
+                                <tr><td>Sanitario</td><td>Registros Sanitarios</td><td>INVIMA / DIGESA / COFEPRIS / ANVISA</td></tr>
+                                <tr><td>Log&iacute;stica</td><td>LPI Index 2023</td><td>Banco Mundial</td></tr>
+                                <tr><td>Econ&oacute;mico</td><td>IED y Balanza</td><td>UNCTAD / DANE / CEPAL</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
