@@ -255,6 +255,30 @@
             <h2 class="section-title">Matriz de Entorno Comparativa</h2>
             <p class="section-subtitle">Datos consolidados del Scorecard multidimensional.</p>
             
+            <!-- Resumen Ejecutivo PDF -->
+            <div class="pdf-embed-wrapper animate-up" style="margin-bottom: 2.5rem;">
+                <div style="display:flex;align-items:center;gap:12px;margin-bottom:1rem;">
+                    <div style="background:#c8860a;border-radius:8px;padding:8px 12px;font-size:18px;">&#128196;</div>
+                    <div>
+                        <div style="font-size:18px;font-weight:700;color:#0d1b2a;">Resumen Ejecutivo</div>
+                        <div style="font-size:13px;color:#6b7280;">Documento oficial del proyecto &middot; Il Castello 2026</div>
+                    </div>
+                    <a href="assets/resumen_ejecutivo.pdf" download style="margin-left:auto;background:#0d1b2a;color:#c8860a;border:1px solid #c8860a;padding:8px 18px;border-radius:30px;font-size:12px;font-weight:600;text-decoration:none;transition:all 0.3s;" onmouseover="this.style.background='#c8860a';this.style.color='#0d1b2a'" onmouseout="this.style.background='#0d1b2a';this.style.color='#c8860a'">&#11123; Descargar PDF</a>
+                </div>
+                <div style="border-radius:14px;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,0.12);border:1px solid #e0e6ef;">
+                    <iframe 
+                        src="assets/resumen_ejecutivo.pdf#toolbar=0&navpanes=0&scrollbar=1&view=FitH" 
+                        width="100%" 
+                        height="700px"
+                        style="display:block;border:none;"
+                        title="Resumen Ejecutivo Il Castello">
+                        <p style="padding:2rem;text-align:center;">
+                            Tu navegador no soporta PDFs incrustados. 
+                            <a href="assets/resumen_ejecutivo.pdf">Haz clic aqu&iacute; para descargarlo.</a>
+                        </p>
+                    </iframe>
+                </div>
+            </div>
             <div class="matrix-module animate-up">
                 <div class="matrix-tabs">
                     <div class="m-tab active" onclick="switchMatrix('viabilidad', this)">Scorecard de Viabilidad</div>
