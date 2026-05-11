@@ -1,0 +1,99 @@
+.matrix-module {
+    font-family: 'Inter', sans-serif;
+    color: #1a1a2e;
+    background: #fff;
+    border-radius: 20px;
+    padding: 2.5rem;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+    margin-top: 3rem;
+}
+
+.matrix-module .matrix-header {
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 1rem;
+}
+
+.matrix-module .matrix-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 2rem;
+    overflow-x: auto;
+    padding-bottom: 5px;
+}
+
+.matrix-module .m-tab {
+    padding: 10px 20px;
+    background: #f4f6fa;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    white-space: nowrap;
+    border: 1px solid transparent;
+}
+
+.matrix-module .m-tab.active {
+    background: #0d1b2a;
+    color: #c8860a;
+    border-color: #c8860a;
+}
+
+.matrix-module .m-panel {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+.matrix-module .m-panel.active {
+    display: block;
+}
+
+.matrix-module table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.matrix-module th {
+    background: #0d1b2a;
+    color: #fff;
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.matrix-module td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.matrix-module .score-pill {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.matrix-module .high { background: #eaf3de; color: #27500a; }
+.matrix-module .mid { background: #fef3cd; color: #7c4f00; }
+.matrix-module .low { background: #fcebeb; color: #791f1f; }
+.matrix-module .gold { background: #0d1b2a; color: #c8860a; }
+
+.matrix-module .source-link {
+    color: #2e75b6;
+    text-decoration: none;
+    font-size: 11px;
+    word-break: break-all;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+    .matrix-module { padding: 1.5rem; }
+    .matrix-module table { font-size: 11px; }
+    .matrix-module th, .matrix-module td { padding: 8px; }
+}
