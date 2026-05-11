@@ -152,3 +152,12 @@ function navClick(el) {
     document.querySelectorAll('.sec-nav a').forEach(a => a.classList.remove('active'));
     el.classList.add('active');
 }
+
+// Matrix Switcher for Environment Module
+function switchMatrix(panelId, el) {
+    document.querySelectorAll('.m-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.m-panel').forEach(p => p.classList.remove('active'));
+    el.classList.add('active');
+    const panel = document.getElementById('m-' + panelId);
+    if (panel) panel.classList.add('active');
+}
