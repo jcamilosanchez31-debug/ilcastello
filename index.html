@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -441,6 +441,7 @@
   <div class="ctab" onclick="switchCountry('sv',this)"><span class="flag">🇸🇻</span>El Salvador</div>
   <div class="ctab" onclick="switchCountry('mx',this)"><span class="flag">🇲🇽</span>México</div>
   <div class="ctab" onclick="switchCountry('br',this)"><span class="flag">🇧🇷</span>Brasil</div>
+  <div class="ctab" onclick="switchCountry('ar',this)"><span class="flag">🇦🇷</span>Argentina</div>
   <div class="ctab" onclick="switchCountry('compare',this)">⚖️ Comparación</div>
 </div>
 
@@ -1979,6 +1980,466 @@
 
 
 <!-- ════════════════════════════════════════════════
+     PANEL ARGENTINA
+════════════════════════════════════════════════ -->
+<div class="country-panel" id="panel-ar">
+
+  <!-- HERO ARGENTINA -->
+  <div class="hero" style="background:linear-gradient(135deg,#1C3A5E 0%,#2C5282 100%)">
+    <div class="hero-inner">
+      <div>
+        <div style="font-size:10px;color:#75B2DD;font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:5px">Análisis de internacionalización · 🇦🇷 Argentina</div>
+        <div class="hero-title">Colombia → Argentina<br>Pasta Artesanal Il Castello</div>
+        <div class="hero-sub">Congelada y seca · Análisis completo de viabilidad · Fuentes verificadas · Mayo 2026</div>
+      </div>
+      <div class="hero-score">
+        <div style="font-size:10px;color:#75B2DD;margin-bottom:3px">VIABILIDAD GLOBAL</div>
+        <div class="num" style="color:#75B2DD">65<span style="font-size:18px;color:#7a9ab0">/100</span></div>
+        <div style="background:#75B2DD;color:#1C3A5E;padding:3px 12px;border-radius:20px;font-size:10px;font-weight:700;margin-top:4px">⚠ VIABLE CON RIESGOS ALTOS</div>
+      </div>
+    </div>
+    <div class="kpi-strip" style="max-width:1100px;margin:14px auto 0">
+      <div class="kpi-c" style="background:#1a3050;border-color:#75B2DD"><div class="val">47.2M</div><div class="lbl">Habitantes 2024 (INDEC Censo 2022)</div></div>
+      <div class="kpi-c" style="background:#1a3050;border-color:#75B2DD"><div class="val">0%</div><div class="lbl">Arancel pasta ACE-72 (MERCOSUR-COL)</div></div>
+      <div class="kpi-c" style="background:#1a3050;border-color:#75B2DD"><div class="val">14-20 días</div><div class="lbl">Cartagena→Buenos Aires</div></div>
+      <div class="kpi-c" style="background:#1a3050;border-color:#75B2DD"><div class="val">14 kg/cápita</div><div class="lbl">Consumo pasta/año (2do mundo)</div></div>
+      <div class="kpi-c" style="background:#1a3050;border-color:#75B2DD"><div class="val">ARS $1,200+</div><div class="lbl">Tipo cambio (inestable)</div></div>
+      <div class="kpi-c" style="background:#1a3050;border-color:#75B2DD"><div class="val">#60</div><div class="lbl">LPI logístico (BM 2023)</div></div>
+    </div>
+  </div>
+
+  <div class="container">
+
+  <!-- ──────────────────────────────────────────────────────
+       SEC 01 — DEMOGRAFÍA
+  ────────────────────────────────────────────────────── -->
+  <div class="section" id="s1">
+    <div class="sec-head"><span class="sec-num" style="background:#1C3A5E;color:#75B2DD">SEC 01</span><span class="sec-title">Indicadores Demográficos — Argentina 2024-2025</span></div>
+
+    <div class="alert" style="background:#e8f4fd;border-color:#75B2DD;color:#1C3A5E"><strong>Contexto clave:</strong> Argentina es el <strong>2do mayor consumidor de pasta per cápita del mundo</strong> (14 kg/año), solo superado por Italia (23 kg). Con 130 años de inmigración italiana y tradición pastera arraigada, el mercado conoce y valora la pasta artesanal. Sin embargo, el país produce masivamente su propia pasta (390,000 ton/año). Il Castello debe diferenciarse en el segmento premium/artesanal.</div>
+
+    <h3>1.1 Indicadores poblacionales — Censo Nacional 2022 (INDEC)</h3>
+    <table><thead><tr><th>Indicador</th><th>Valor</th><th>Detalle</th><th>Fuente</th></tr></thead><tbody>
+      <tr><td>Población total 2024</td><td><strong>47,173,100</strong></td><td>Basado en Censo Nacional 2022 (46,044,703) + proyecciones INDEC</td><td>INDEC — Censo 2022 · indec.gob.ar</td></tr>
+      <tr><td>Edad mediana 2025</td><td><strong>32 años</strong></td><td>Casi duplicó desde 1869 (17 años). Envejecimiento gradual.</td><td>Argendata / INDEC · argendata.fund.ar</td></tr>
+      <tr><td>Esperanza de vida</td><td>76.5 años</td><td>Hombres 73.6 · Mujeres 79.5</td><td>WHO/OPS 2024</td></tr>
+      <tr><td>Población urbana</td><td>92%</td><td>Una de las más altas de América Latina</td><td>INDEC / Wikipedia Demografía Argentina</td></tr>
+      <tr><td>Área Metropolitana Buenos Aires (AMBA)</td><td>~16,500,000</td><td>Los 40 partidos del AMBA suman 16,469,318 (Censo 2022)</td><td>INDEC Censo 2022</td></tr>
+      <tr><td>PIB per cápita 2024</td><td>~USD 12,400</td><td>Recuperación post-recesión. En PPA: ~USD 24,900</td><td>FMI / Banco Mundial 2024</td></tr>
+      <tr><td>Consumo pasta per cápita</td><td><strong>14 kg/año</strong></td><td>2do mayor del mundo. Estimación 2023: entre 9.5-14 kg (divergencia de fuentes).</td><td>InformesDeExpertos.com / Claves Información Competitiva 2023</td></tr>
+    </tbody></table>
+
+    <h3>1.2 Ciudades objetivo para Il Castello</h3>
+    <table><thead><tr><th>Ciudad</th><th>Población</th><th>Herencia italiana</th><th>Oportunidad Il Castello</th></tr></thead><tbody>
+      <tr><td><strong>Buenos Aires (CABA + AMBA)</strong></td><td>~16,500,000</td><td>Muy alta. 60%+ descendencia italiana/española.</td><td>PRIORITARIA. Mayor mercado gastronómico de AL. Canal HoReCa más desarrollado. Supermercados premium (La Anónima, Jumbo, Disco, Carrefour Premium). Palermo, Recoleta, Belgrano = zonas gourmet.</td></tr>
+      <tr><td><strong>Córdoba</strong></td><td>~1,700,000</td><td>Alta. Fuerte herencia italiana.</td><td>2da ciudad. Restaurantes italianos activos. Mercado universitario y corporativo.</td></tr>
+      <tr><td><strong>Rosario (Santa Fe)</strong></td><td>~1,400,000</td><td>Muy alta. Región de mayor tradición pastera artesanal.</td><td>Ciudad clave. Puerto de Rosario (distribución fluvial). Tradición de pasta fresca casera (ravioles, ñoquis).</td></tr>
+      <tr><td><strong>Mendoza</strong></td><td>~1,100,000</td><td>Alta. Tradición gastronómica vitivinícola.</td><td>Turismo gastronómico premium. Restaurantes de alta gama. Maridaje pasta-vino.</td></tr>
+    </tbody></table>
+
+    <h3>1.3 Estructura socioeconómica — contexto 2024-2025</h3>
+    <div class="alert" style="background:#fef3cd;border-color:#f0c040;color:#5c3d00"><strong>CONTEXTO CRÍTICO:</strong> La pobreza en Argentina alcanzó el <strong>53% en el primer semestre de 2024</strong> (el nivel más alto desde 2018) durante el ajuste de Milei, pero cayó al <strong>32% en el primer semestre de 2025</strong>. El NSE A/B (clase alta y media-alta) representa ~15-20% de la población y es el target de Il Castello. Este segmento mantuvo su poder adquisitivo durante la crisis. Fuente: Focus-economics.com</div>
+    <div class="grid3">
+      <div class="card" style="border-top:3px solid #1C3A5E;text-align:center"><div style="font-size:20px;font-weight:700;color:#1C3A5E;margin-bottom:4px">~15-20%</div><div style="font-size:11px;color:#374151">NSE A/B — Target Il Castello<br>~7-9 millones personas</div></div>
+      <div class="card" style="border-top:3px solid #75B2DD;text-align:center"><div style="font-size:20px;font-weight:700;color:#1C3A5E;margin-bottom:4px">~35%</div><div style="font-size:11px;color:#374151">NSE C — Clase media<br>Target pasta seca artesanal</div></div>
+      <div class="card" style="border-top:3px solid #a0b0c0;text-align:center;opacity:.8"><div style="font-size:20px;font-weight:700;color:#6b7280;margin-bottom:4px">~45-50%</div><div style="font-size:11px;color:#6b7280">NSE D/E — No target<br>Pasta industrial barata</div></div>
+    </div>
+
+    <div style="margin-top:14px">
+      <div class="link-box"><div class="icon">↗</div><div><div class="lbtitle">INDEC — Censo Nacional de Población, Hogares y Viviendas 2022</div><a href="https://censo.gob.ar/" target="_blank">censo.gob.ar — Resultados definitivos. 46,044,703 hab. AMBA: 16,469,318.</a></div></div>
+      <div class="link-box"><div class="icon">↗</div><div><div class="lbtitle">Argendata — Demografía Argentina 2025 (edad mediana, envejecimiento)</div><a href="https://argendata.fund.ar/topico/poblacion/" target="_blank">argendata.fund.ar — Edad mediana 32 años en 2025. Menores de 30 = &lt;30% de la población.</a></div></div>
+      <div class="link-box"><div class="icon">↗</div><div><div class="lbtitle">InformesDeExpertos — Mercado de Pasta en Argentina 2026-2035 (14 kg per cápita 2023)</div><a href="https://www.informesdeexpertos.com/informes/mercado-de-pasta-en-argentina" target="_blank">informesdeexpertos.com — Argentina 2do consumidor mundial de pasta per cápita.</a></div></div>
+    </div>
+  </div>
+
+  <!-- ──────────────────────────────────────────────────────
+       SEC 02 — CULTURAL
+  ────────────────────────────────────────────────────── -->
+  <div class="section" id="s2">
+    <div class="sec-head"><span class="sec-num" style="background:#1C3A5E;color:#75B2DD">SEC 02</span><span class="sec-title">Análisis Cultural y Hábitos de Consumo</span></div>
+
+    <div class="alert" style="background:#1C3A5E;border-color:#75B2DD;color:#e8f4fd"><strong>OPORTUNIDAD CULTURAL ÚNICA:</strong> Argentina tiene la cultura pastera más desarrollada de América Latina. Con 130 años de inmigración italiana masiva (especialmente en Buenos Aires, Córdoba, Santa Fe y Mendoza), la pasta artesanal NO necesita educación de mercado — el argentino ya sabe qué es un raviole, un ñoqui, un sorrentino. <strong>Il Castello compite en un mercado sofisticado que exige calidad artesanal real.</strong></div>
+
+    <h3>2.1 La pasta en Argentina — datos culturales clave</h3>
+    <table><thead><tr><th>Indicador</th><th>Dato</th><th>Fuente</th></tr></thead><tbody>
+      <tr><td>Consumo per cápita anual</td><td><strong>14 kg/año</strong> (2023, estimación informesdeexpertos.com) — Otras fuentes: 9-10 kg para pasta seca</td><td>InformesDeExpertos.com 2024 / Claves Información Competitiva 2023</td></tr>
+      <tr><td>Posición mundial en consumo</td><td><strong>2do lugar del mundo</strong> (después de Italia con 23 kg)</td><td>IPO — International Pasta Organisation</td></tr>
+      <tr><td>Producción doméstica de pasta</td><td>~390,000 toneladas/año (Argentina entre top 10 productores mundiales)</td><td>Ministerio de Agroindustria Argentina 2017 / MAGYP</td></tr>
+      <tr><td>Empresas del sector pasta</td><td>+1,500 empresas. 95% son PyMEs de pasta fresca. ~80 firmas en pasta seca.</td><td>MAGYP Argentina 2017</td></tr>
+      <tr><td>Preferencia pasta "al dente"</td><td>Creciente demanda de pasta con "consistencia al dente" con 100% sémola de trigo candeal.</td><td>Argentina.gob.ar — Exportaciones pastas 2019</td></tr>
+      <tr><td>Tendencias 2024-2025</td><td>Pasta sin gluten, pasta de quinoa, multicereales, pasta con legumbres. Crecen en supermercados y e-commerce.</td><td>InformesDeExpertos.com / ExpertMarketResearch.com</td></tr>
+    </tbody></table>
+
+    <h3>2.2 Cómo se prepara y consume la pasta en Argentina</h3>
+    <div class="grid2">
+      <div>
+        <div class="step"><div class="step-num" style="background:#1C3A5E;color:#75B2DD">1</div><div><div class="stitle">Los ñoquis del 29 (tradición mensual)</div><div class="sdesc">Cada 29 del mes, millones de argentinos comen ñoquis con una moneda abajo del plato para atraer prosperidad. Es el ritual gastronómico mensual más difundido del país. Oportunidad directa para ñoquis artesanales Il Castello congelados.</div></div></div>
+        <div class="step"><div class="step-num" style="background:#1C3A5E;color:#75B2DD">2</div><div><div class="stitle">Ravioles del domingo (almuerzo familiar)</div><div class="sdesc">El almuerzo dominical con ravioles es una tradición fuertemente italiana en el sur y centro de Argentina. La pasta fresca/artesanal es el formato preferido para este ritual. CANAL NATURAL para Il Castello congelada premium.</div></div></div>
+        <div class="step"><div class="step-num" style="background:#1C3A5E;color:#75B2DD">3</div><div><div class="stitle">Sorrentinos, capeletis y pastas rellenas</div><div class="sdesc">Especialidades de regiones con fuerte herencia italiana (Córdoba, Santa Fe, Buenos Aires). Muy populares en restaurantes italianos. Il Castello con rellenos artesanales entraría directamente en este nicho premium.</div></div></div>
+        <div class="step"><div class="step-num" style="background:#1C3A5E;color:#75B2DD">4</div><div><div class="stitle">Milanesa a la napolitana con spaghetti</div><div class="sdesc">El plato más icónico de Argentina (milanesa napolitana) se sirve frecuentemente con pasta. Es la entrada al consumo de spaghetti en el canal masivo. Para Il Castello: mercado educado, exigente en calidad.</div></div></div>
+      </div>
+      <div>
+        <h4 style="color:#1C3A5E;margin-bottom:10px">Tendencias de consumo 2024-2025:</h4>
+        <table><thead><tr><th>Tendencia</th><th>Implicación para Il Castello</th></tr></thead><tbody>
+          <tr><td>Premiumización post-crisis</td><td>El NSE A/B que sobrevivió el ajuste de Milei busca productos premium. Pasta artesanal importada = aspiracional.</td></tr>
+          <tr><td>Sin gluten y funcional</td><td>Mercado de pasta sin gluten en crecimiento activo. Il Castello puede desarrollar línea específica.</td></tr>
+          <tr><td>Pasta seca vs. inflación</td><td>La inflación empujó el consumo de pasta seca como proteína económica. Pero el segmento artesanal se mantiene en NSE A/B.</td></tr>
+          <tr><td>E-commerce gourmet</td><td>Mercado Libre, Rappi, tiendas online gourmet crecieron durante la pandemia y mantienen tracción.</td></tr>
+          <tr><td>Turismo gastronómico</td><td>Buenos Aires es destino gastronómico mundial. Restaurantes italianos de alta gama buscan pasta de origen único.</td></tr>
+        </tbody></table>
+      </div>
+    </div>
+
+    <h3>2.3 Idioma y comunicación empresarial</h3>
+    <div class="card" style="border-left:4px solid #1C3A5E"><strong>Español rioplatense — sin barreras pero con matices</strong><p style="font-size:12px;color:#374151;margin-top:6px">El español es el idioma único de Argentina. Sin barrera idiomática para B2B. Sin embargo, el español rioplatense usa el <strong>"vos"</strong> en lugar de "tú", y tiene vocabulario propio ("che", "pibe", "laburo"). Para materiales de marketing al consumidor final, <strong>adaptar el copy al español rioplatense es recomendado pero no obligatorio</strong>. Para B2B con importadores y restaurantes, el español colombiano es completamente comprensible. El nombre "Il Castello" conecta perfectamente con la identidad cultural ítalo-argentina.</p></div>
+
+    <div style="margin-top:14px">
+      <div class="link-box"><div class="icon">↗</div><div><div class="lbtitle">La Gaceta — Consumo pasta Argentina: 9.5 kg per cápita, proyectado 10 kg (Claves Información Competitiva 2023)</div><a href="https://www.lagaceta.com.ar/nota/992870/economia/cuantos-kilos-pastas-consumen-argentinos.html" target="_blank">lagaceta.com.ar — Claves Información Competitiva. Pasta seca ventaja vs inflación de carnes.</a></div></div>
+      <div class="link-box"><div class="icon">↗</div><div><div class="lbtitle">ExpertMarketResearch — Mercado pasta Argentina: herencia italiana, ravioles, tendencias sin gluten</div><a href="https://www.expertmarketresearch.com/es/reports/argentina-pasta-market" target="_blank">expertmarketresearch.com — Exportó USD 16.4M pasta en 2022. Tradición y tendencias del mercado.</a></div></div>
+      <div class="link-box"><div class="icon">↗</div><div><div class="lbtitle">Argentina.gob.ar — Exportaciones de pastas alimenticias Argentina (producción y tendencias sector)</div><a href="https://www.argentina.gob.ar/noticias/las-exportaciones-de-pastas-alimenticias-crecieron-un-423" target="_blank">argentina.gob.ar — 390,000 ton/año producción. Pasta seca 85%. +1,500 empresas del sector.</a></div></div>
+    </div>
+  </div>
+
+  <!-- ──────────────────────────────────────────────────────
+       SEC 03 — POLÍTICO Y LEGAL
+  ────────────────────────────────────────────────────── -->
+  <div class="section" id="s3">
+    <div class="sec-head"><span class="sec-num" style="background:#1C3A5E;color:#75B2DD">SEC 03</span><span class="sec-title">Entorno Político y Marco Legal</span></div>
+
+    <h3>3.1 Contexto político Argentina 2024-2025 — impacto en Il Castello</h3>
+    <table><thead><tr><th>Indicador</th><th>Dato actual</th><th>Efecto en Il Castello</th></tr></thead><tbody>
+      <tr><td>Gobierno / Presidente</td><td><strong>Javier Milei</strong> (La Libertad Avanza). En el poder desde dic 2023. Primer presidente libertario de Argentina.</td><td>POSITIVO para importaciones: Milei desreguló fuertemente el comercio exterior, eliminó el SEDI (sistema previo de importaciones) y facilitó los trámites en feb 2025.</td></tr>
+      <tr><td>Inflación 2024-2025</td><td>Pico de ~290% interanual en abril 2024. Cayó sostenidamente. Proyección BBVA 2025: ~35% anual. En descenso.</td><td>RIESGO ALTO: La inflación hace que los precios en ARS sean inestables. Il Castello debe negociar contratos en USD para protegerse. El importador argentino también opera en USD en el segmento gourmet.</td></tr>
+      <tr><td>PIB 2024-2025</td><td>Contracción 1.7% en 2024. Proyección OCDE: +4.2% en 2025, +3.0% en 2026.</td><td>POSITIVO: Recuperación económica en curso. Consumo privado en máximo histórico según Q1 2025.</td></tr>
+      <tr><td>Tipo de cambio</td><td>~ARS 1,400/USD estimado fin 2025 (BBVA Research). Liberación gradual del "cepo".</td><td>RIESGO: La volatilidad cambiaria es el mayor riesgo para Il Castello. Necesita operar en USD con importadores que manejen divisas o en zonas francas.</td></tr>
+      <tr><td>Pobreza 2025</td><td>Cayó de 53% (1er sem 2024) a 32% (1er sem 2025) — mínimo desde 2018. Fuente: Focus-economics.com.</td><td>POSITIVO: Recuperación del poder adquisitivo del NSE C amplía el mercado objetivo de Il Castello más allá del NSE A/B.</td></tr>
+      <tr><td>Reformas pro-mercado (RIGI)</td><td>Régimen de Incentivos para Grandes Inversiones (RIGI) ya atrajo USD 12,000M en compromisos. Simplificación regulatoria de alimentos (Decreto 35/2025).</td><td>POSITIVO: El ambiente pro-inversión facilita entrada de productos extranjeros. Decreto 35/2025 simplificó la importación de alimentos.</td></tr>
+      <tr><td>Salario Mínimo 2025</td><td>~ARS 271,571/mes (~USD 193-200/mes según tipo de cambio oficial). Se actualiza periódicamente.</td><td>REFERENCIA: El poder adquisitivo en USD es bajo para el grueso de la población. Il Castello se enfoca en el segmento con ingresos en dólares o altos en pesos.</td></tr>
+    </tbody></table>
+
+    <h3>3.2 Autoridades reguladoras — importar alimentos a Argentina</h3>
+    <div class="grid2">
+      <div class="card" style="border-left:4px solid #1C3A5E">
+        <h4 style="color:#1C3A5E">ANMAT / INAL — Administración Nacional de Medicamentos, Alimentos y Tecnología Médica</h4>
+        <p style="font-size:12px;color:#374151">Es el equivalente argentino del INVIMA colombiano. Regula todos los alimentos importados para comercialización en Argentina. A través del <strong>Instituto Nacional de Alimentos (INAL)</strong> gestiona el <strong>RNPA (Registro Nacional de Productos Alimentarios)</strong> y el RNE (Registro Nacional de Establecimientos).<br><br>
+        <strong>CAMBIO CLAVE 2025 (Decreto 35/2025):</strong> Colombia NO está en el Anexo III de países con estándares de alta vigilancia (EE.UU., UE, Japón, etc.). Por lo tanto, Il Castello debe tramitar el RNPA completo ante el INAL.</p>
+        <p style="font-size:11px;color:#2e75b6;margin-top:6px"><a href="https://www.argentina.gob.ar/anmat" target="_blank">argentina.gob.ar/anmat</a> · <a href="http://www.anmat.gov.ar/formularios/guia_alimentos.asp" target="_blank">Guía de alimentos INAL</a></p>
+      </div>
+      <div class="card" style="border-left:4px solid #1C3A5E">
+        <h4 style="color:#1C3A5E">SENASA — Servicio Nacional de Sanidad y Calidad Agroalimentaria</h4>
+        <p style="font-size:12px;color:#374151">Controla sanidad de productos de origen vegetal y animal. Para pasta de trigo colombiana: requiere <strong>Autorización Fitosanitaria de Importación (AFIDI)</strong> del SENASA para el trigo usado en la pasta. El fabricante colombiano (Il Castello) debe acreditar que el trigo cumple los estándares fitosanitarios argentinos.<br><br>
+        <strong>SENASA también evalúa si el Código Alimentario Argentino (CAA) es cumplido</strong> por el producto importado.</p>
+        <p style="font-size:11px;color:#2e75b6;margin-top:6px"><a href="https://www.argentina.gob.ar/senasa" target="_blank">argentina.gob.ar/senasa</a> · Email: responde@senasa.gob.ar</p>
+      </div>
+      <div class="card" style="border-left:4px solid #1C3A5E">
+        <h4 style="color:#1C3A5E">ARCA (ex-AFIP) — Agencia de Recaudación y Control Aduanero</h4>
+        <p style="font-size:12px;color:#374151">Reemplazó a la AFIP en 2024. Gestiona el despacho aduanero en Argentina. El importador argentino tramita la importación aquí. Sistema: SIMI (ahora simplificado) y registro del importador/exportador en ARCA. <strong>El sistema de declaraciones juradas previas (SEDI) fue eliminado en feb 2025</strong> — agilizó enormemente las importaciones.</p>
+        <p style="font-size:11px;color:#2e75b6;margin-top:6px"><a href="https://www.argentina.gob.ar/arca" target="_blank">argentina.gob.ar/arca</a></p>
+      </div>
+      <div class="card" style="border-left:4px solid #1C3A5E">
+        <h4 style="color:#1C3A5E">INPI — Instituto Nacional de la Propiedad Industrial</h4>
+        <p style="font-size:12px;color:#374151">Registro de marcas en Argentina. Equivalente al SIC colombiano. <strong>"Il Castello" debe registrarse en la Clase 30 (pasta, harina) del Acuerdo de Niza.</strong> Sistema "primero en registrar" — riesgo real si alguien lo registra antes.</p>
+        <table style="border:none;background:transparent;margin-top:8px">
+          <tr><td style="border:none;font-size:11.5px;padding:2px 0;font-weight:700;color:#1C3A5E">Costo:</td><td style="border:none;font-size:11.5px;padding:2px 0">~ARS 50,000-100,000 (~USD 35-70)</td></tr>
+          <tr><td style="border:none;font-size:11.5px;padding:2px 0;font-weight:700;color:#1C3A5E">Tiempo:</td><td style="border:none;font-size:11.5px;padding:2px 0">12-24 meses</td></tr>
+          <tr><td style="border:none;font-size:11.5px;padding:2px 0;font-weight:700;color:#1C3A5E">Vigencia:</td><td style="border:none;font-size:11.5px;padding:2px 0">10 años, renovable</td></tr>
+        </table>
+        <p style="font-size:11px;color:#2e75b6;margin-top:6px"><a href="https://www.argentina.gob.ar/inpi" target="_blank">argentina.gob.ar/inpi</a></p>
+      </div>
+    </div>
+
+    <h3>3.3 Aranceles de importación Argentina — pasta artesanal</h3>
+    <table><thead><tr><th>Tributo</th><th>Tasa</th><th>Base</th><th>Aplica a Il Castello</th></tr></thead><tbody>
+      <tr><td>Arancel Ad Valorem (DGA)</td><td><strong>0% bajo ACE-72 MERCOSUR-Colombia</strong> / AEC MERCOSUR normalmente 10-16% sin TLC</td><td>Valor CIF</td><td><span class="tag tag-g">SÍ — 0% con Certificado Origen ACE-72. Productos canastas A, B, C, D = arancel 0% desde 2018.</span></td></tr>
+      <tr><td>IVA Argentina</td><td><strong>10.5%</strong> para alimentos básicos (pasta)</td><td>Valor CIF + DGA</td><td>Sí. El importador recupera como crédito fiscal si está inscrito en IVA. La pasta tiene IVA REDUCIDO (10.5% no 21%).</td></tr>
+      <tr><td>Tasa Estadística</td><td>0.5% sobre valor CIF</td><td>Valor CIF</td><td>Sí. Cargo mínimo de trámite aduanero.</td></tr>
+      <tr><td>Ingresos Brutos (provincial)</td><td>Variable por provincia (2-3%)</td><td>Precio de venta</td><td>Lo paga el distribuidor/importador en la provincia donde opera.</td></tr>
+    </tbody></table>
+    <div class="alert alert-g" style="margin-top:8px"><strong>ACE-72 MERCOSUR-Colombia:</strong> Suscrito el 21 julio 2017. Vigente para Colombia-Argentina desde <strong>20 diciembre 2017</strong>. Productos en Canastas A, B, C, D acceden con <strong>preferencia arancelaria del 100% (Arancel 0%)</strong> porque los plazos de desgravación ya se cumplieron desde 2018.<br>Fuente: <a href="https://www.magyp.gob.ar/internacionales/acuerdos-comerciales-colombia.php" target="_blank" style="color:#27500a">magyp.gob.ar/internacionales/acuerdos-comerciales-colombia</a> · <a href="https://argentina.embajada.gov.co/colombia/asuntos_economicos" target="_blank" style="color:#27500a">argentina.embajada.gov.co</a></div>
+
+    <h3>3.4 Leyes de alimentos congelados y empaque Argentina</h3>
+    <table><thead><tr><th>Norma</th><th>Contenido</th><th>Impacto en Il Castello</th></tr></thead><tbody>
+      <tr><td>Código Alimentario Argentino (CAA) — Decreto 2126/71 mod. Decreto 35/2025</td><td>Marco general de alimentos en Argentina. Los productos importados deben cumplir el CAA.</td><td>La pasta artesanal colombiana debe cumplir los parámetros del CAA para pasta (Art. 701-709 CAA). Incluye composición, etiquetado y condiciones de conservación.</td></tr>
+      <tr><td>Resolución INAL — Alimentos congelados</td><td>Temperatura de conservación: -18°C obligatoria en toda la cadena. Etiqueta debe indicar instrucciones de almacenamiento y descongelamiento.</td><td>Cadena de frío es obligatoria desde origen (Colombia) hasta consumidor final. El importador argentino debe tener almacén refrigerado certificado.</td></tr>
+      <tr><td>Etiquetado — Resolución 26/2003 GMC MERCOSUR</td><td>Etiquetado en idioma español (Argentina). Incluir: denominación, lista ingredientes, peso neto, origen (COLOMBIA), fecha de vencimiento, condiciones de almacenamiento, lote.</td><td>Diseñar etiqueta específica para Argentina cumpliendo la Resolución GMC 26/2003 (norma de etiquetado MERCOSUR).</td></tr>
+      <tr><td>Ley 27279 — Gestión envases de plásticos</td><td>Marco de responsabilidad extendida del productor. Logística inversa para envases.</td><td>Il Castello debe asegurar que el importador argentino tenga acuerdo de gestión de residuos de empaque. Caja de cartón (pasta seca) no afectada. Bolsa congelada: informar manejo responsable.</td></tr>
+    </tbody></table>
+
+    <div style="margin-top:14px">
+      <div class="link-box"><div class="icon">↗</div><div><div class="lbtitle">Argentina.gob.ar — ANMAT Decreto 35/2025: nuevos procedimientos importación alimentos (feb 2025)</div><a href="https://www.argentina.gob.ar/noticias/la-anmat-establece-nuevos-procedimientos-para-importar-y-exportar-alimentos-de-acuerdo-al" target="_blank">argentina.gob.ar — Colombia NO está en Anexo III. Debe tramitar RNPA e INAL completo.</a></div></div>
+      <div class="link-box"><div class="icon">↗</div><div><div class="lbtitle">MAGYP — Acuerdos Comerciales Colombia: ACE-72, Canastas A-D = arancel 0%</div><a href="https://www.magyp.gob.ar/internacionales/acuerdos-comerciales-colombia.php" target="_blank">magyp.gob.ar — Desgravación completada al 100%. Pasta colombiana entra sin arancel.</a></div></div>
+      <div class="link-box"><div class="icon">↗</div><div><div class="lbtitle">Embajada de Colombia en Argentina — ACE-72 vigente desde 20 dic 2017</div><a href="https://argentina.embajada.gov.co/colombia/asuntos_economicos" target="_blank">argentina.embajada.gov.co — ACE-72 mantiene objetivos del ACE 59. Condiciones de acceso sin cambios.</a></div></div>
+      <div class="link-box"><div class="icon">↗</div><div><div class="lbtitle">Tanoira Cassagne — Decreto 35/2025: modificaciones al Código Alimentario Argentino (análisis legal)</div><a href="https://www.tanoiracassagne.com/codigo-alimentario-argentino-modificaciones-en-los-procedimientos-para-la-importacion-y-exportacion-de-alimentos/" target="_blank">tanoiracassagne.com — Análisis del decreto y sus impactos para importadores de alimentos.</a></div></div>
+    </div>
+  </div>
+
+  <!-- ──────────────────────────────────────────────────────
+       SEC 04 — GEO-AMBIENTAL
+  ────────────────────────────────────────────────────── -->
+  <div class="section" id="s4">
+    <div class="sec-head"><span class="sec-num" style="background:#1C3A5E;color:#75B2DD">SEC 04</span><span class="sec-title">Entorno Geográfico, Ambiental y Tecnológico</span></div>
+
+    <h3>4.1 Geografía e infraestructura Argentina</h3>
+    <table><thead><tr><th>Aspecto</th><th>Dato</th><th>Impacto logístico para Il Castello</th></tr></thead><tbody>
+      <tr><td>Superficie total</td><td>2,780,400 km² (8vo país más grande del mundo)</td><td>Enorme país. La distribución interna desde Buenos Aires a ciudades del interior (Córdoba, Rosario, Mendoza) requiere una red logística terrestre desarrollada.</td></tr>
+      <tr><td>Ubicación</td><td>Cono sur de Sudamérica. Costa del Atlántico Sur. Sin salida al Pacífico.</td><td>La ruta desde Colombia es EXCLUSIVAMENTE por el Atlántico. Cartagena → Buenos Aires navegando por el Atlántico Sur (no pasa por el Caribe). Sin canal de Panamá.</td></tr>
+      <tr><td>Clima Buenos Aires y pampa</td><td>Templado húmedo. Inviernos 5-10°C, veranos 25-35°C. Sin nieve en costas.</td><td>Cadena de frío manejable. Buenos Aires no tiene calores extremos como Brasil. El verano (dic-feb) es el riesgo de mayor temperatura para la pasta congelada.</td></tr>
+      <tr><td>Red vial interna</td><td>Autopistas bien desarrolladas. Buenos Aires–Rosario (300 km), Buenos Aires–Córdoba (700 km), Buenos Aires–Mendoza (1,050 km).</td><td>Distribución terrestre viable a las ciudades clave. La red de autopistas es mejor que El Salvador o Brasil.</td></tr>
+    </tbody></table>
+
+    <h3>4.2 Infraestructura portuaria y aeroportuaria</h3>
+    <table><thead><tr><th>Infraestructura</th><th>Datos clave</th><th>Relevancia para Il Castello</th></tr></thead><tbody>
+      <tr><td><strong>Puerto de Buenos Aires (Exolgan)</strong></td><td>Principal puerto de contenedores. Ubicado en Dock Sud, provincia de Buenos Aires. Terminal operada por APM Terminals y Exolgan. Maneja carga refrigerada.</td><td>PUNTO DE LLEGADA PRINCIPAL. Toda la pasta Il Castello desde Colombia llega aquí. Conexión directa con la ciudad de Buenos Aires.</td></tr>
+      <tr><td><strong>Puerto de Zárate</strong></td><td>Ubicado 75 km al norte de Buenos Aires sobre el Río Paraná. Puerto industrial con terminales de contenedores.</td><td>Alternativa al Puerto de Buenos Aires para distribución hacia el norte del país.</td></tr>
+      <tr><td><strong>Puerto de Rosario</strong></td><td>Principal puerto fluvial de Argentina. Sobre el Río Paraná. Movimiento masivo de granos (50%+ de las exportaciones argentinas).</td><td>Para distribución hacia Rosario y Santa Fe — zonas de alta tradición pastera. Accesible desde Buenos Aires vía hidrovía.</td></tr>
+      <tr><td><strong>Aeropuerto Ministro Pistarini (EZE)</strong></td><td>Aeropuerto internacional. Ubicado en Ezeiza, 35 km de Buenos Aires. Vuelos directos Bogotá-Buenos Aires: Aerolíneas Argentinas, LATAM, Copa. ~6 horas de vuelo.</td><td>Envío de muestras piloto vía DHL/FedEx o cargo aéreo LATAM Cargo. BOG→EZE 2-3 días vía carga aérea.</td></tr>
+    </tbody></table>
+
+    <h3>4.3 Acceso a tecnología e innovación</h3>
+    <div class="grid2">
+      <div class="card" style="border-left:4px solid #1C3A5E"><strong>Penetración tecnológica Argentina</strong><p style="font-size:12px;color:#374151;margin-top:5px">Internet: ~82% de penetración nacional. Buenos Aires y ciudades principales: &gt;88%. Argentina tiene el ecosistema de e-commerce más desarrollado de Sudamérica después de Brasil. Mercado Libre (empresa argentina) domina el comercio electrónico regional. PedidosYa, Rappi y apps de delivery muy activas en Buenos Aires.</p></div>
+      <div class="card card-a"><strong>Regulación ambiental y empaque</strong><p style="font-size:12px;color:#374151;margin-top:5px">Ley 27.279 establece responsabilidad extendida de productores de envases. La pasta seca (caja de cartón) no genera problemas. La pasta congelada (bolsa sellada) tiene excepción por inocuidad. Buenos Aires Ciudad tiene regulación de reducción de plásticos propia. Recomendado: empaque reciclable o biodegradable para alinearse con supermercados premium.</p></div>
+    </div>
+    <div style="margin-top:12px">
+      <div class="link-box"><div class="icon">↗</div><div><div class="lbtitle">iContainers — Transporte marítimo Argentina (rutas, tiempos, costos)</div><a href="https://www.icontainers.com/es/transporte-maritimo/argentina/" target="_blank">icontainers.com — Europa→Argentina: 20-35 días. Cartagena→Buenos Aires estimado 14-20 días.</a></div></div>
+    </div>
+  </div>
+
+  <!-- ──────────────────────────────────────────────────────
+       SEC 05 — COMERCIO INTERNACIONAL
+  ────────────────────────────────────────────────────── -->
+  <div class="section" id="s5">
+    <div class="sec-head"><span class="sec-num" style="background:#1C3A5E;color:#75B2DD">SEC 05</span><span class="sec-title">Comercio Internacional Colombia–Argentina</span></div>
+
+    <h3>5.1 Acuerdos comerciales vigentes</h3>
+    <table><thead><tr><th>Acuerdo</th><th>Vigencia</th><th>Beneficio para Il Castello</th></tr></thead><tbody>
+      <tr><td><strong>ACE-72 MERCOSUR–Colombia</strong></td><td>Suscrito 21 jul 2017. Vigente Colombia-Argentina desde <strong>20 dic 2017</strong>. Reemplazó y profundizó el ACE 59.</td><td><span class="tag tag-g">ARANCEL 0% para pasta colombiana en Argentina. Canastas A, B, C, D = desgravación 100% desde 2018.</span></td></tr>
+      <tr><td><strong>Alianza del Pacífico</strong></td><td>Colombia es miembro. Argentina es Estado Observador.</td><td>Facilita networking y contactos empresariales. Argentina tiene interés en acercarse a la Alianza del Pacífico.</td></tr>
+      <tr><td><strong>MERCOSUR–UE</strong></td><td>Firmado ene 2026. Aplicación provisional desde <strong>1 mayo 2026</strong>.</td><td>RIESGO: Pasta italiana y europea tendrá acceso preferencial a Argentina. Il Castello debe diferenciarse antes de que este acuerdo impacte el mercado.</td></tr>
+      <tr><td><strong>ALADI</strong></td><td>Marco regional amplio</td><td>Respaldo jurídico adicional al comercio bilateral Colombia-Argentina.</td></tr>
+    </tbody></table>
+
+    <div class="alert" style="background:#fef9e7;border-color:#f0c040;color:#5c3d00;margin-top:8px"><strong>⚠ ALERTA — MERCOSUR-UE desde mayo 2026:</strong> El acuerdo MERCOSUR-UE entró en aplicación provisional el <strong>1 de mayo de 2026</strong>. Esto significa que la pasta italiana y europea comenzará a acceder a Argentina con preferencias arancelarias crecientes. <strong>Il Castello debe establecerse en Argentina ANTES de que la competencia europea se fortalezca.</strong> Fuente: Cancillería Argentina.</div>
+
+    <h3>5.2 Instituciones de apoyo Colombia–Argentina</h3>
+    <table><thead><tr><th>Institución</th><th>Tipo</th><th>Servicios para Il Castello</th><th>Contacto</th></tr></thead><tbody>
+      <tr><td>Procolombia — Oficina Buenos Aires</td><td>Agencia pública COL</td><td>Inteligencia de mercado, misiones comerciales, ruedas de negocios Buenos Aires, asesoría exportación. GRATUITO.</td><td><a href="https://procolombia.co" target="_blank">procolombia.co</a></td></tr>
+      <tr><td>Embajada Colombia en Argentina</td><td>Diplomática</td><td>Sección Económica y Comercial. Contactos con importadores argentinos. Perfil económico y comercial Argentina.</td><td><a href="https://argentina.embajada.gov.co" target="_blank">argentina.embajada.gov.co</a></td></tr>
+      <tr><td>Cámara Argentino-Colombiana</td><td>Binacional privada</td><td>Matchmaking con importadores argentinos de alimentos gourmet. Ruedas de negocios.</td><td>Buscar en Google</td></tr>
+      <tr><td>CAME (Confederación Argentina MIPYME)</td><td>Gremio privado AR</td><td>Conexión con pequeñas y medianas empresas del sector alimentos. Red de distribuidores.</td><td><a href="https://www.came.org.ar" target="_blank">came.org.ar</a></td></tr>
+      <tr><td>CAFIA (Cámara de Alimentos Argentina)</td><td>Gremial privada AR</td><td>Directorio de importadores de alimentos. Asesoría regulatoria ANMAT/INAL.</td><td>Buscar en Google</td></tr>
+      <tr><td>ProArgentina (SE)</td><td>Agencia pública AR</td><td>Facilita inversión e importaciones premium en Argentina bajo nuevo gobierno Milei.</td><td><a href="https://www.argentina.gob.ar/produccion" target="_blank">argentina.gob.ar/produccion</a></td></tr>
+    </tbody></table>
+
+    <h3>5.3 Balanza comercial Colombia-Argentina</h3>
+    <div class="grid2">
+      <div class="card"><strong>Tendencia histórica</strong><p style="font-size:12px;margin-top:5px">Colombia y Argentina tienen un comercio bilateral moderado comparado con Brasil. Argentina históricamente ha tenido superávit frente a Colombia (exporta maquinaria, alimentos, productos industriales). Los principales productos que Colombia exporta a Argentina: carbón, ferroniquel, productos químicos y plásticos. Los alimentos procesados artesanales como pasta <strong>tienen baja participación hoy — oportunidad directa</strong>.</p></div>
+      <div class="card"><strong>Oportunidad para Il Castello</strong><p style="font-size:12px;margin-top:5px">Argentina importó bienes de consumo por <strong>USD 58,000 millones en 2024</strong> (CESCE). El ajuste de Milei liberó importaciones y en diciembre 2024 los bienes de consumo crecieron +80.6%. El segmento gourmet e importado tiene alta demanda en el NSE A/B de Buenos Aires. <strong>Il Castello sería el primer exportador colombiano de pasta artesanal a Argentina.</strong></p></div>
+    </div>
+
+    <h3>5.4 LPI Banco Mundial 2023 — Argentina</h3>
+    <table><thead><tr><th>País</th><th>Posición LPI 2023</th><th>Puntaje /5.0</th><th>Observación</th></tr></thead><tbody>
+      <tr><td>Brasil</td><td>#51</td><td>3.2</td><td>Mejor de Sudamérica</td></tr>
+      <tr><td>Perú</td><td>#61</td><td>3.0</td><td>Comparativo</td></tr>
+      <tr><td><strong>Argentina</strong></td><td><strong>#60</strong></td><td><strong>3.0</strong></td><td>Similar a Perú. Burocracia aduanera en mejora bajo Milei.</td></tr>
+      <tr><td>Colombia</td><td>#66</td><td>2.9</td><td>Por debajo de los destinos analizados</td></tr>
+    </tbody></table>
+
+    <h3>5.5 Ruta de exportación paso a paso: Colombia → Argentina</h3>
+    <div class="card" style="margin-top:10px">
+      <div class="step"><div class="step-num" style="background:#1C3A5E;color:#75B2DD">1</div><div><div class="stitle">Planta Il Castello → Puerto de Cartagena</div><div class="sdesc">Transporte terrestre Medellín → Cartagena (camión refrigerado para pasta congelada). Tiempo: 10-12 horas. <strong>Cartagena es el puerto obligatorio para rutas atlánticas hacia el cono sur.</strong> No usar Buenaventura (Pacífico) para Argentina — implicaría rodear el continente.</div></div></div>
+      <div class="step"><div class="step-num" style="background:#1C3A5E;color:#75B2DD">2</div><div><div class="stitle">Cartagena → Puerto de Buenos Aires (Exolgan/Dock Sud)</div><div class="sdesc">Flete marítimo: <strong>14-20 días estimados</strong> por el Atlántico Sur. No pasa por el Canal de Panamá. Ruta directa: Cartagena → baja por el Atlántico → Río de la Plata → Buenos Aires. Navieras: MSC, CMA CGM, Hapag-Lloyd, Hamburg Süd (MAERSK), COSCO. Contenedor reefer a -18°C. Costo estimado reefer 20': USD 2,500-5,000.</div></div></div>
+      <div class="step"><div class="step-num" style="background:#1C3A5E;color:#75B2DD">3</div><div><div class="stitle">Despacho aduanero — ARCA + ANMAT/INAL</div><div class="sdesc">Agente aduanal argentino gestiona el despacho en ARCA (ex-AFIP). Documentos: BL, factura comercial, packing list, <strong>Certificado de Origen ACE-72</strong> (arancel 0%), Certificado Sanitario INVIMA apostillado, RNPA vigente, análisis de laboratorio. Pago: IVA 10.5% + Tasa Estadística 0.5%. Tiempo: 3-7 días hábiles según canal selectividad.</div></div></div>
+      <div class="step"><div class="step-num" style="background:#1C3A5E;color:#75B2DD">4</div><div><div class="stitle">Buenos Aires → Distribución interna</div><div class="sdesc">Puerto/almacén de Dock Sud → almacén frigorífico del importador en Buenos Aires → restaurantes, hoteles y supermercados. Distribución a Rosario (+300 km), Córdoba (+700 km), Mendoza (+1,050 km) vía camiones refrigerados. <strong>TIEMPO TOTAL (planta Colombia → Buenos Aires): 18-28 días hábiles.</strong></div></div></div>
+    </div>
+    <div style="margin-top:12px">
+      <div class="link-box"><div class="icon">↗</div><div><div class="lbtitle">iContainers — Transporte marítimo Argentina: tiempos, costos, puertos</div><a href="https://www.icontainers.com/es/transporte-maritimo/argentina/" target="_blank">icontainers.com — Puerto Buenos Aires (Exolgan), Rosario, Bahía Blanca. FCL y LCL disponibles.</a></div></div>
+      <div class="link-box"><div class="icon">↗</div><div><div class="lbtitle">Cancillería Argentina — MERCOSUR-UE aplicación provisional desde 1 mayo 2026</div><a href="https://cancilleria.gob.ar/es/politica-exterior/acuerdos-comerciales-vigencia-reciente-negociacion" target="_blank">cancilleria.gob.ar — Lista de acuerdos vigentes. ACE-72 Colombia vigente.</a></div></div>
+    </div>
+  </div>
+
+  <!-- ──────────────────────────────────────────────────────
+       SEC 06 — INVERSIÓN EXTRANJERA
+  ────────────────────────────────────────────────────── -->
+  <div class="section" id="s6">
+    <div class="sec-head"><span class="sec-num" style="background:#1C3A5E;color:#75B2DD">SEC 06</span><span class="sec-title">Entorno de Inversión Extranjera</span></div>
+    <div class="grid4">
+      <div class="card"><div style="font-size:18px;font-weight:700;color:#1C3A5E;margin-bottom:5px">+4.2%</div><div style="font-size:12px;font-weight:700">PIB Argentina 2025</div><div style="font-size:11px;color:#374151">Proyectado OCDE. Recuperación tras -1.7% en 2024.</div></div>
+      <div class="card"><div style="font-size:18px;font-weight:700;color:#1C3A5E;margin-bottom:5px">USD 12B</div><div style="font-size:12px;font-weight:700">Compromisos RIGI 2025</div><div style="font-size:11px;color:#374151">Régimen Incentivos Grandes Inversiones. Fuente: FMI.</div></div>
+      <div class="card"><div style="font-size:18px;font-weight:700;color:#f0c040;margin-bottom:5px">ARS 1,400</div><div style="font-size:12px;font-weight:700">Tipo cambio estimado</div><div style="font-size:11px;color:#374151">Fin 2025 (BBVA Research). RIESGO PRINCIPAL para Il Castello.</div></div>
+      <div class="card"><div style="font-size:18px;font-weight:700;color:#1C3A5E;margin-bottom:5px">+80.6%</div><div style="font-size:12px;font-weight:700">Importaciones bienes consumo</div><div style="font-size:11px;color:#374151">Diciembre 2024 vs 2023. Liberación del cepo. Fuente: Comex-AR.</div></div>
+    </div>
+    <h3>Apertura comercial y sectores clave</h3>
+    <table><thead><tr><th>Sector</th><th>Situación</th><th>Relevancia para Il Castello</th></tr></thead><tbody>
+      <tr><td>Retail y supermercados</td><td>Jumbo (Cencosud Chile), Carrefour, Dia, Walmart (Changomas), La Anónima. Mercado competitivo con marcas propias.</td><td>Jumbo y Carrefour tienen secciones gourmet activas en Buenos Aires donde la pasta artesanal importada tiene espacio.</td></tr>
+      <tr><td>Gastronomía y turismo</td><td>Buenos Aires = destino gastronómico mundial. Más restaurantes per cápita que muchas ciudades del mundo.</td><td>Canal HoReCa muy sofisticado. Restaurantes italianos de alta gama son clientes directos. El chef argentino valora la calidad artesanal.</td></tr>
+      <tr><td>E-commerce gourmet</td><td>Mercado Libre (fundado en Argentina). PedidosYa, Rappi, tiendas gourmet online crecieron fuertemente.</td><td>Mercado Libre y tiendas gourmet online son canales viables para pasta seca artesanal Il Castello. Llegada directa al consumidor final NSE A/B.</td></tr>
+    </tbody></table>
+    <div style="margin-top:12px">
+      <div class="link-box"><div class="icon">↗</div><div><div class="lbtitle">OCDE — Perspectivas Económicas Argentina 2025: PIB +4.2%, recuperación en marcha</div><a href="https://www.oecd.org/content/dam/oecd/es/topics/policy-sub-issues/economic-snapshot-pages/eo118sp/CN_ARG_ESP_EO118-Final.pdf" target="_blank">oecd.org — PIB +4.2% en 2025. Recuperación impulsada por minería y energía. RIGI USD 12B.</a></div></div>
+      <div class="link-box"><div class="icon">↗</div><div><div class="lbtitle">BBVA Research — Situación Argentina Marzo 2025 (crecimiento 5.5%, tipo cambio 1,400)</div><a href="https://www.bbvaresearch.com/publicaciones/situacion-argentina-marzo-2025/" target="_blank">bbvaresearch.com — Proyección: PIB +5.5% 2025. Tipo cambio ARS 1,400/USD fin 2025.</a></div></div>
+    </div>
+  </div>
+
+  <!-- ──────────────────────────────────────────────────────
+       SEC 07 — INVIMA Y TRÁMITES
+  ────────────────────────────────────────────────────── -->
+  <div class="section" id="s7">
+    <div class="sec-head"><span class="sec-num" style="background:#1C3A5E;color:#75B2DD">SEC 07</span><span class="sec-title">INVIMA y Trámites — Exportar Colombia → Argentina</span></div>
+    <div class="alert" style="background:#fef3cd;border-color:#f0c040;color:#5c3d00"><strong>CAMBIO IMPORTANTE — Decreto 35/2025 Argentina:</strong> Desde enero 2025, Argentina simplificó los trámites de importación de alimentos. Colombia NO está en el "Anexo III" de países con alta vigilancia sanitaria (EE.UU., UE, Japón, etc.). Por lo tanto, Il Castello debe tramitar el RNPA completo ante el INAL. <strong>Sin embargo, el proceso es ahora más ágil que antes gracias a la plataforma TAD (Trámites A Distancia)</strong>. Fuente: Argentina.gob.ar</div>
+
+    <h3>7.1 Trámites en Colombia (origen) — igual base + diferencias para Argentina</h3>
+    <table><thead><tr><th>#</th><th>Trámite Colombia</th><th>Diferencia específica para Argentina</th></tr></thead><tbody>
+      <tr><td>A1-A6</td><td>RSA INVIMA, BPM, HACCP, análisis, habilitación — IGUALES a todos los países</td><td>Sin diferencia. El RSA INVIMA colombiano sirve como base.</td></tr>
+      <tr><td>A7</td><td>Certificado Sanitario Oficial de Exportación (INVIMA)</td><td><strong>Debe ser apostillado</strong> para Argentina. Tramitar apostilla en Cancillería Colombia (Ministerio de Relaciones Exteriores).</td></tr>
+      <tr><td>A8</td><td><strong>Certificado de Origen ACE-72 MERCOSUR-Colombia</strong></td><td>Formato específico del ACE-72 (NO es el CAN de Perú ni el TLC de México). Emitido por Cámara de Comercio colombiana.</td></tr>
+      <tr><td>A9</td><td>Análisis de laboratorio conforme al Código Alimentario Argentino</td><td>Argentina puede exigir que los parámetros cumplan el CAA. Verificar con importador argentino los parámetros específicos para pasta (NCM 1902).</td></tr>
+    </tbody></table>
+
+    <h3>7.2 Trámites en Argentina (destino) — rol del importador</h3>
+    <table><thead><tr><th>#</th><th>Trámite</th><th>Entidad</th><th>Documentos necesarios</th><th>Tiempo/Costo</th></tr></thead><tbody>
+      <tr><td>B1</td><td>Registro del importador en ARCA (ex-AFIP)</td><td>ARCA — Agencia Recaudación y Control Aduanero</td><td>CUIT activo, Perfil de Importador/Exportador habilitado, despachante de aduanas.</td><td>Previo. 5-15 días si no está registrado.</td></tr>
+      <tr><td>B2</td><td><strong>RNPA — Registro Nacional de Productos Alimentarios</strong></td><td>INAL (vía TAD - Trámites a Distancia)</td><td>Certificado Sanitario INVIMA apostillado, ficha técnica en español, análisis laboratorio, etiqueta (Resolución GMC 26/2003), datos del importador.</td><td>30-90 días · Arancel aprox. ARS 30,000-80,000</td></tr>
+      <tr><td>B3</td><td>RNE — Registro Nacional de Establecimientos</td><td>INAL</td><td>Si el importador no lo tiene, debe tramitarlo una sola vez. Incluye datos del establecimiento de almacenamiento.</td><td>30-60 días. Una sola vez.</td></tr>
+      <tr><td>B4</td><td>AFIDI — Autorización Fitosanitaria de Importación</td><td>SENASA vía ARCA/TAD</td><td>Especificar: producto (pasta de trigo colombiana), origen (Colombia), uso final (consumo humano). Verificar si el trigo colombiano está en la lista de países habilitados.</td><td>10-30 días. Por producto.</td></tr>
+      <tr><td>B5</td><td>Despacho aduanero (DGA)</td><td>ARCA (agente aduanal argentino)</td><td>BL, factura, packing list, Cert. Origen ACE-72, Cert. Sanitario INVIMA apostillado, RNPA vigente, AFIDI SENASA.</td><td>3-7 días hábiles</td></tr>
+      <tr><td>B6</td><td>Registro marca INPI Argentina</td><td>INPI</td><td>Solicitud, diseño de marca, Clase 30 (pasta, harina) del Acuerdo de Niza.</td><td>12-24 meses · ARS 50-100K (~USD 35-70)</td></tr>
+    </tbody></table>
+
+    <h3>7.3 Checklist Il Castello → Argentina</h3>
+    <ul class="chk">
+      <li><span class="chkbadge">✓</span>RSA INVIMA vigente (pasta congelada 1902.20 + pasta seca 1902.19)</li>
+      <li><span class="chkbadge">✓</span>BPM certificadas (Resolución 2674/2013) + Plan HACCP -18°C</li>
+      <li><span class="chkbadge">✓</span>Análisis microbiológico (Salmonella, Listeria, E. coli negativos)</li>
+      <li><span class="chkbadge">✓</span>Certificado Sanitario INVIMA <strong>APOSTILLADO</strong> (Cancillería Colombia)</li>
+      <li><span class="chkbadge">✓</span>Certificado de Origen <strong>ACE-72 MERCOSUR-Colombia</strong> (Cámara de Comercio, formato específico)</li>
+      <li><span class="chkbadge">✓</span>Etiqueta en español cumpliendo <strong>Resolución GMC 26/2003 MERCOSUR</strong> (denominación, ingredientes, peso neto, origen COLOMBIA, vencimiento, condiciones almacenamiento -18°C)</li>
+      <li><span class="chkbadge">✓</span>RNPA INAL vigente (tramitado por importador argentino con CUIT)</li>
+      <li><span class="chkbadge">✓</span>RNE del importador argentino (Registro Nacional de Establecimientos)</li>
+      <li><span class="chkbadge">✓</span>AFIDI SENASA para trigo colombiano autorizado</li>
+      <li><span class="chkbadge">✓</span>Importador argentino con ARCA habilitado + almacén frigorífico -18°C</li>
+      <li><span class="chkbadge">✓</span>Agentes aduanales en Colombia (exportación) y Argentina (importación)</li>
+      <li><span class="chkbadge">✓</span>Marca "Il Castello" registrada en INPI Argentina (Clase 30)</li>
+      <li><span class="chkbadge">✓</span>Contenedor reefer -18°C reservado en naviera Cartagena → Buenos Aires</li>
+    </ul>
+    <div style="margin-top:12px">
+      <div class="link-box"><div class="icon">↗</div><div><div class="lbtitle">Argentina.gob.ar — SENASA: Aprobación de alimentos importados (Resolución 816/2002)</div><a href="https://www.argentina.gob.ar/senasa/productos-alimenticios-aprobacion-de-alimentos-importados" target="_blank">argentina.gob.ar/senasa — Importaciones@senasa.gob.ar · Carlos Calvo 66 CABA.</a></div></div>
+      <div class="link-box"><div class="icon">↗</div><div><div class="lbtitle">ComexAR — Requisitos importar alimentos Argentina 2025 (ANMAT, INAL, TAD, Decreto 35/2025)</div><a href="https://www.comex-ar.es/argentina-simplifica-los-requisitos-para-importar-y-exportar-alimentos-y-bebidas" target="_blank">comex-ar.es — RNPA, RNE, TAD, simplificación 2025. Guía práctica actualizada.</a></div></div>
+      <div class="link-box"><div class="icon">↗</div><div><div class="lbtitle">Alimentosargentinos.magyp.gob.ar — SAIPA: organismos sanitarios para importar alimentos</div><a href="https://alimentosargentinos.magyp.gob.ar/HomeAlimentos/saipa/organismos_sanitarios_intervinientes.php" target="_blank">alimentosargentinos.magyp.gob.ar — ANMAT, SENASA, INAL. Guía oficial Argentina.</a></div></div>
+    </div>
+  </div>
+
+  <!-- ──────────────────────────────────────────────────────
+       SEC 08 — MERCADO DE PASTA
+  ────────────────────────────────────────────────────── -->
+  <div class="section" id="s8">
+    <div class="sec-head"><span class="sec-num" style="background:#1C3A5E;color:#75B2DD">SEC 08</span><span class="sec-title">Mercado de Pasta en Argentina — Análisis Profundo</span></div>
+
+    <h3>8.1 Argentina: el mayor consumidor de pasta de América Latina</h3>
+    <div class="grid2">
+      <div style="background:#e8f4fd;border:1px solid #75B2DD;border-radius:10px;padding:16px">
+        <div style="font-size:11px;color:#1C3A5E;font-weight:700;margin-bottom:6px">MERCADO PASTA ARGENTINA</div>
+        <div style="font-size:36px;font-weight:700;color:#1C3A5E">14 kg</div>
+        <div style="font-size:12px;color:#374151;margin-top:4px">consumo per cápita/año · 2do del mundo · Fuente: InformesDeExpertos.com 2024</div>
+        <div style="margin-top:12px;font-size:12px;color:#374151">
+          <strong>Producción anual:</strong> ~390,000 toneladas (top 10 mundial)<br>
+          <strong>Empresas del sector:</strong> +1,500 (95% PyMEs de pasta fresca)<br>
+          <strong>Exportaciones pasta 2022:</strong> USD 16.4M (Chile, Paraguay, Uruguay)<br>
+          <strong>Argentina es exportador neto de pasta</strong> — produce más de lo que importa
+        </div>
+        <div style="font-size:11px;color:#6b7280;margin-top:8px">Fuente: MAGYP Argentina / InformesDeExpertos.com / ExpertMarketResearch.com</div>
+      </div>
+      <div>
+        <h4 style="color:#1C3A5E;margin-bottom:10px">Competidores en el mercado argentino:</h4>
+        <table><thead><tr><th>Competidor</th><th>Tipo</th><th>Posición</th></tr></thead><tbody>
+          <tr><td>La Salteña (Arcor)</td><td>Doméstico</td><td>Líder pasta fresca (tapas, pastas rellenas). Gigante argentino.</td></tr>
+          <tr><td>Favorita / Don Vicente</td><td>Doméstico</td><td>Pasta seca industrial. Alta distribución masiva.</td></tr>
+          <tr><td>Lucchetti (Chile)</td><td>Importado regional</td><td>Pasta seca premium. Presencia en supermercados.</td></tr>
+          <tr><td>Barilla (Italia)</td><td>Importado premium</td><td>Carrefour, Jumbo. Gama premium italiana.</td></tr>
+          <tr><td>Pasta artesanal local</td><td>Doméstico premium</td><td>+1,400 pequeñas empresas de pasta fresca artesanal en todo el país.</td></tr>
+          <tr><td>Colombia (Il Castello)</td><td>Importado nuevo</td><td><strong>SIN PRESENCIA. Pero mercado ya educado y exigente en artesanalidad.</strong></td></tr>
+        </tbody></table>
+      </div>
+    </div>
+
+    <div class="alert" style="background:#fef3cd;border-color:#f0c040;color:#5c3d00;margin-top:10px"><strong>RETO PRINCIPAL:</strong> Argentina ya tiene una cultura de pasta artesanal muy desarrollada con +1,400 productores locales de pasta fresca. Il Castello NO compite con la pasta industrial masiva (La Salteña, Favorita) — compite con el segmento artesanal premium. <strong>Diferenciadores clave:</strong> (1) Origen colombiano = curiosidad y novedad, (2) Ingredientes únicos (si Il Castello usa ingredientes propios), (3) Conveniencia del congelado vs. la pasta fresca local que dura 2-3 días, (4) Precio competitivo gracias al arancel 0% ACE-72.</div>
+
+    <h3>8.2 Canales de distribución en Argentina</h3>
+    <table><thead><tr><th>Canal</th><th>Actores clave</th><th>Prioridad</th><th>Estrategia Il Castello</th></tr></thead><tbody>
+      <tr><td>HoReCa Premium</td><td>Restaurantes italianos Buenos Aires, hoteles Marriott/Hilton/Sofitel/NH/Alvear Palace, catering corporativo premium</td><td><span class="tag tag-g">AÑO 1 — PRIORITARIO</span></td><td>Buenos Aires tiene miles de restaurantes italianos. El chef argentino busca diferenciación. Pasta colombiana artesanal = novedad y conversación.</td></tr>
+      <tr><td>Supermercados premium</td><td>Jumbo (Cencosud), Carrefour Premium, Disco, La Anónima gourmet</td><td><span class="tag tag-a">AÑO 1-2</span></td><td>Sección gourmet de Jumbo en Palermo, Recoleta, Belgrano. Pasta artesanal colombiana importada = posicionamiento premium claro.</td></tr>
+      <tr><td>Tiendas gourmet / deli</td><td>Tiendas especializadas en Palermo, San Telmo, Recoleta. Mercado de San Telmo.</td><td><span class="tag tag-a">AÑO 1-2</span></td><td>Alta visibilidad para NSE A/B que busca productos artesanales únicos. Formato perfecto para pasta seca artesanal.</td></tr>
+      <tr><td>E-commerce</td><td>Mercado Libre Argentina, tiendas gourmet online, PedidosYa</td><td><span class="tag tag-b">AÑO 2</span></td><td>Argentina tiene el e-commerce más sofisticado de Sudamérica. Mercado Libre para pasta seca. Rappi/PedidosYa para restaurantes.</td></tr>
+    </tbody></table>
+
+    <h3>8.3 Partidas arancelarias pasta en Argentina (NCM)</h3>
+    <div class="alert alert-b"><strong>Nomenclatura Común MERCOSUR (NCM) para pasta Il Castello:</strong><br>
+    → <strong>1902.11.00</strong>: Pastas sin cocer, sin rellenar, que contengan huevo (pasta seca artesanal con huevo)<br>
+    → <strong>1902.19.00</strong>: Pastas sin cocer, sin rellenar, las demás (pasta seca artesanal sin huevo)<br>
+    → <strong>1902.20.00</strong>: Pastas rellenas, incluso cocidas o preparadas (pasta congelada rellena)<br>
+    → <strong>1902.30.00</strong>: Las demás pastas (pasta fresca, cocida, no rellena)<br>
+    Verificar arancel exacto en: <a href="https://www.argentina.gob.ar/arca/nomenclatura-arancelaria" target="_blank" style="color:#0c447c">argentina.gob.ar/arca</a></div>
+    <div style="margin-top:12px">
+      <div class="link-box"><div class="icon">↗</div><div><div class="lbtitle">MAGYP Argentina — Análisis FODA Farináceos 2017 (producción pasta, exportaciones, sector)</div><a href="https://www.magyp.gob.ar/sitio/areas/ss_mercados_agropecuarios/apertura_de_mercados/analisis_foda/_archivos/000513_Farináceos%20-%202017.pdf" target="_blank">magyp.gob.ar — 390,000 ton/año producción. 1,500+ empresas. Argentina 2do consumidor mundial.</a></div></div>
+      <div class="link-box"><div class="icon">↗</div><div><div class="lbtitle">InformesDeExpertos.com — Mercado de Pasta Argentina 2026-2035 (14 kg per cápita, tendencias)</div><a href="https://www.informesdeexpertos.com/informes/mercado-de-pasta-en-argentina" target="_blank">informesdeexpertos.com — Mercado pasta Argentina. Sin gluten, quinoa, vegana. Tendencias 2024-2035.</a></div></div>
+    </div>
+  </div>
+
+  <!-- ──────────────────────────────────────────────────────
+       SEC 09 — BMC + SMART
+  ────────────────────────────────────────────────────── -->
+  <div class="section" id="s9">
+    <div class="sec-head"><span class="sec-num" style="background:#1C3A5E;color:#75B2DD">SEC 09</span><span class="sec-title">Business Model Canvas y Objetivos SMART</span></div>
+    <p style="font-size:11.5px;color:#6b7280;margin-bottom:14px">Base: Osterwalder & Pigneur "Business Model Generation" (2010) · Philip Kotler "Marketing Management" 15ª ed.</p>
+    <div class="bmc-grid">
+      <div class="bmc-cell" style="border-left:3px solid #1C3A5E"><div class="bmc-title" style="color:#1C3A5E">1. Socios clave</div><ul><li>Importador/distribuidor Buenos Aires con cadena fría y RNPA</li><li>Agencia aduanal Colombia + Argentina</li><li>Naviera reefer Cartagena → Buenos Aires</li><li>Chefs restaurantes italianos Palermo/Recoleta</li><li>INVIMA + ANMAT/INAL (reguladores)</li><li>Procolombia (Oficina Buenos Aires)</li></ul></div>
+      <div class="bmc-cell" style="border-left:3px solid #1C3A5E"><div class="bmc-title" style="color:#1C3A5E">2. Actividades clave</div><ul><li>Producción artesanal BPM/HACCP</li><li>Apostillar Certif. Sanitario INVIMA</li><li>RNPA INAL Argentina vía importador</li><li>Marketing Instagram en español rioplatense</li><li>Visitas comerciales chefs y supermercados premium BA</li></ul></div>
+      <div class="bmc-cell" style="border:2px solid #75B2DD"><div class="bmc-title" style="color:#1C3A5E">3. Propuesta de valor</div><ul><li>Pasta artesanal colombiana en el país con mayor cultura pastera de AL</li><li>Congelada: frescura artesanal + conveniencia (sin perder calidad en 2-3 días como la fresca local)</li><li>Origen colombiano = novedad en un mercado sofisticado</li><li>Arancel 0% ACE-72 = precio competitivo</li><li>Recetas únicas que ítalo-argentinos no conocen</li></ul></div>
+      <div class="bmc-cell" style="border-left:3px solid #1C3A5E"><div class="bmc-title" style="color:#1C3A5E">4. Relación clientes</div><ul><li>Degustaciones en restaurantes italianos BA</li><li>Recetarios para chefs en español rioplatense</li><li>WhatsApp Business B2B ágil</li><li>Co-creación "ñoquis del 29" especiales Il Castello</li><li>Instagram y TikTok en español argentino</li></ul></div>
+      <div class="bmc-cell" style="border-left:3px solid #1C3A5E"><div class="bmc-title" style="color:#1C3A5E">5. Segmentos</div><ul><li>Restaurantes italianos Buenos Aires (Palermo, Recoleta, Belgrano)</li><li>Hoteles 5* (Alvear Palace, Sofitel, NH, Marriott)</li><li>Supermercados premium Jumbo/Carrefour gourmet</li><li>Tiendas gourmet Palermo / San Telmo</li><li>Mercado Libre / e-commerce pasta seca</li></ul></div>
+      <div class="bmc-cell" style="border-left:3px solid #1C3A5E"><div class="bmc-title" style="color:#1C3A5E">6. Canales</div><ul><li>Importador-distribuidor Buenos Aires</li><li>Vendedor HoReCa propio</li><li>Instagram/TikTok (español rioplatense)</li><li>Mercado Libre Argentina</li><li>Participación en expoAlimentaria Buenos Aires</li></ul></div>
+      <div class="bmc-cell" style="border-left:3px solid #1C3A5E"><div class="bmc-title" style="color:#1C3A5E">7. Recursos clave</div><ul><li>RSA INVIMA + Certif. apostillado</li><li>RNPA INAL Argentina + AFIDI SENASA</li><li>Marca INPI Argentina (Clase 30)</li><li>Cert. Origen ACE-72 (Cámara Comercio COL)</li></ul></div>
+      <div class="bmc-cell" style="border-left:3px solid #1C3A5E"><div class="bmc-title" style="color:#1C3A5E">8. Estructura de costos</div><ul><li>Flete reefer Cartagena→Buenos Aires: USD 2,500-5,000</li><li>Apostilla INVIMA: COP 60-120K</li><li>RNPA INAL: ARS 30-80K (~USD 20-55)</li><li>AFIDI SENASA: variable</li><li>Margen distribuidor: 20-35%</li><li>Registro INPI: ARS 50-100K (~USD 35-70)</li></ul></div>
+      <div class="bmc-cell" style="border-left:3px solid #1C3A5E"><div class="bmc-title" style="color:#1C3A5E">9. Fuentes de ingresos</div><ul><li>Venta FOB al importador argentino</li><li>Operar en USD (no en ARS) para protegerse de inflación</li><li>Pasta seca: volumen alto, margen estable</li><li>Pasta congelada: HoReCa premium, mayor margen</li><li>Objetivo año 1: 1-2 contenedores 20'</li></ul></div>
+    </div>
+
+    <h3>Objetivos SMART — Argentina</h3>
+    <div class="smart-row"><div class="smart-letter" style="color:#75B2DD;background:#1C3A5E">S</div><div class="smart-content"><div class="stit">Específico</div><div class="sdesc">Penetrar el canal HoReCa de Buenos Aires (Palermo, Recoleta, Belgrano) con pasta seca y pasta congelada artesanal en 5-8 restaurantes italianos premium y 2-3 hoteles 4-5 estrellas.</div></div></div>
+    <div class="smart-row"><div class="smart-letter" style="color:#75B2DD;background:#1C3A5E">M</div><div class="smart-content"><div class="stit">Medible</div><div class="sdesc">Mínimo 5 restaurantes y 2 hoteles como clientes activos en 12 meses. 1-2 contenedores 20' despachados. Tasa de reorden &gt;70%. RNPA INAL obtenido en primeros 4 meses.</div></div></div>
+    <div class="smart-row"><div class="smart-letter" style="color:#75B2DD;background:#1C3A5E">A</div><div class="smart-content"><div class="stit">Alcanzable</div><div class="sdesc">Argentina es el 2do mayor consumidor de pasta del mundo. El mercado conoce y valora la pasta artesanal. ACE-72 = arancel 0%. Buenos Aires tiene miles de restaurantes italianos. Meta conservadora de 5 clientes en un mercado de miles es absolutamente alcanzable.</div></div></div>
+    <div class="smart-row"><div class="smart-letter" style="color:#75B2DD;background:#1C3A5E">R</div><div class="smart-content"><div class="stit">Relevante</div><div class="sdesc">La cultura pastera de Argentina es inigualable en AL. El argentino premium NSE A/B conoce la pasta artesanal y paga por ella. Il Castello ofrece un diferencial: origen colombiano en un mercado que conoce todo lo italiano pero no lo colombiano.</div></div></div>
+    <div class="smart-row"><div class="smart-letter" style="color:#75B2DD;background:#1C3A5E">T</div><div class="smart-content"><div class="stit">Temporal</div><div class="sdesc">Mes 1-2: Apostillar Certif. INVIMA + Cert. Origen ACE-72. Contactar Procolombia Buenos Aires. Mes 2-4: Identificar importador argentino + tramitar RNPA INAL. Mes 4-7: Muestras DHL a chefs BA. Mes 7-12: Primer contenedor Cartagena → Buenos Aires.</div></div></div>
+  </div>
+
+  <!-- ──────────────────────────────────────────────────────
+       SEC 10 — VEREDICTO
+  ────────────────────────────────────────────────────── -->
+  <div class="section" id="s10">
+    <div class="sec-head"><span class="sec-num" style="background:#1C3A5E;color:#75B2DD">SEC 10</span><span class="sec-title">Veredicto y Conclusiones Estratégicas — Argentina</span></div>
+    <div class="verdict-grid">
+      <div class="verdict-item"><div class="vdim">Cultura pasta / afinidad</div><div class="vsc" style="color:#1C3A5E">9.5/10</div><div class="varg">14 kg/año per cápita. 2do consumidor mundial. 130 años herencia italiana. Ñoquis del 29 como ritual cultural nacional.</div></div>
+      <div class="verdict-item"><div class="vdim">Demografía y mercado</div><div class="vsc" style="color:#1C3A5E">7.5/10</div><div class="varg">47M hab., 92% urbano. NSE A/B ~15-20%. Buenos Aires = mayor mercado gastronómico de AL. Pero pobreza alta (32%) limita el target.</div></div>
+      <div class="verdict-item"><div class="vdim">Acuerdos comerciales</div><div class="vsc" style="color:#27500a">8.5/10</div><div class="varg">ACE-72 vigente desde dic 2017. Arancel 0% para pasta colombiana. Mejor que Brasil (parcial) aunque MERCOSUR-UE desde mayo 2026 es nuevo riesgo.</div></div>
+      <div class="verdict-item"><div class="vdim">Riesgo cambiario</div><div class="vsc" style="color:#a32d2d">3.0/10</div><div class="varg">EL MAYOR RIESGO. Inflación histórica. Tipo de cambio volátil. Operar en USD es indispensable. El importador debe ser sofisticado en gestión de divisas.</div></div>
+      <div class="verdict-item"><div class="vdim">Logística</div><div class="vsc" style="color:#854f0b">6.5/10</div><div class="varg">LPI #60. Puerto Buenos Aires funcional. Pero ruta más larga (14-20 días desde Cartagena). Sin acceso al Pacífico.</div></div>
+      <div class="verdict-item"><div class="vdim">Trámites regulatorios</div><div class="vsc" style="color:#854f0b">6.0/10</div><div class="varg">RNPA INAL + AFIDI SENASA + apostilla. Proceso más largo que Perú. Pero Decreto 35/2025 simplificó considerablemente (plataforma TAD).</div></div>
+      <div class="verdict-item"><div class="vdim">Competencia local pasta</div><div class="vsc" style="color:#854f0b">5.5/10</div><div class="varg">+1,400 artesanos de pasta fresca local. La Salteña (Arcor), Barilla Italia, pasta regional. Mercado muy competitivo en artesanal.</div></div>
+      <div class="verdict-item"><div class="vdim">Entorno político-económico</div><div class="vsc" style="color:#854f0b">6.0/10</div><div class="varg">Milei = reformas pro-mercado positivas. Pero herencia de inestabilidad histórica es riesgo real. Crecimiento +4.2% proyectado 2025 (OCDE).</div></div>
+    </div>
+    <div class="alert" style="background:#1C3A5E;border-color:#75B2DD;color:#fdf8f0;margin-top:20px;font-size:13.5px;line-height:1.8">
+      <strong style="font-size:15px">VEREDICTO FINAL ARGENTINA: VIABLE CON RIESGOS ALTOS · 65/100</strong><br><br>
+      Argentina tiene la mayor <strong>afinidad cultural con la pasta</strong> de todos los países analizados (2do consumidor mundial, tradición italiana de 130 años). El <strong>ACE-72 garantiza arancel 0%</strong> y el mercado gourmet de Buenos Aires es sofisticado y dispuesto a pagar por artesanalidad. Sin embargo, el <strong>riesgo cambiario es el mayor obstáculo</strong> — operar con pesos argentinos puede destruir márgenes en días. <br><br>
+      <strong>Recomendación:</strong> Argentina es un mercado de <strong>AÑO 4-5</strong> para Il Castello, después de consolidar Perú, El Salvador, México y Brasil. Entra como mercado oportunista cuando la macroeconomía argentina se estabilice. Si se entra, la estrategia es: <strong>contratos en USD con el importador</strong>, pasta seca artesanal como producto de entrada, canal HoReCa Buenos Aires, y posicionarse en la tradición del "ñoqui del 29" como fecha clave.
+    </div>
+    <div class="src-footer">Fuentes: INDEC (Censo 2022, indec.gob.ar) · Argendata (argendata.fund.ar) · OCDE Economic Snapshot Argentina 2025 · BBVA Research Situación Argentina mar 2025 · FMI Staff Report Argentina abr 2025 · Focus-economics.com · CESCE Ficha Riesgo País Argentina mar 2025 · InformesDeExpertos.com Pasta Argentina 2026-2035 · ExpertMarketResearch.com · Claves Información Competitiva 2023 (vía La Gaceta) · MAGYP Argentina (magyp.gob.ar) · Argentina.gob.ar (ANMAT, SENASA, ARCA, Decreto 35/2025) · Embajada Colombia en Argentina (argentina.embajada.gov.co) · Cancillería Argentina (cancilleria.gob.ar) · ComexAR · iContainers · Banco Mundial LPI 2023</div>
+  </div>
+
+  </div><!-- /container ar -->
+</div><!-- /panel-ar -->
+
+
+
+<!-- ════════════════════════════════════════════════
      PANEL COMPARACIÓN
 ════════════════════════════════════════════════ -->
 <div class="country-panel" id="panel-compare">
@@ -2047,6 +2508,20 @@
           <div class="cmp-row"><div class="ckey">Canal ideal:</div><div class="cval">HORECA São Paulo (pasta seca)</div></div>
           <div class="cmp-row"><div class="ckey">Calificación global:</div><div class="cval" style="color:#1a6b3c;font-weight:700">76/100 · VIABLE — AÑO 4</div></div>
         </div>
+        <div class="cmp-col">
+          <h3>🇦🇷 Argentina</h3>
+          <div class="cmp-row"><div class="ckey">Población:</div><div class="cval">47.2 millones</div></div>
+          <div class="cmp-row"><div class="ckey">Consumo pasta:</div><div class="cval win">14 kg/cápita — 2do mundo</div></div>
+          <div class="cmp-row"><div class="ckey">Arancel pasta:</div><div class="cval win">0% (ACE-72 desde dic 2017)</div></div>
+          <div class="cmp-row"><div class="ckey">Tiempo tránsito:</div><div class="cval warn">14-20 días (Cartagena)</div></div>
+          <div class="cmp-row"><div class="ckey">LPI Logístico:</div><div class="cval">#60 / 3.0</div></div>
+          <div class="cmp-row"><div class="ckey">Idioma:</div><div class="cval win">Español rioplatense — sin barrera</div></div>
+          <div class="cmp-row"><div class="ckey">Herencia italiana:</div><div class="cval win">Muy profunda. 130 años.</div></div>
+          <div class="cmp-row"><div class="ckey">Riesgo cambiario:</div><div class="cval warn" style="color:#a32d2d;font-weight:700">MUY ALTO — Inflación histórica</div></div>
+          <div class="cmp-row"><div class="ckey">Competencia local:</div><div class="cval warn">Alta — 1,400 artesanos pasta local</div></div>
+          <div class="cmp-row"><div class="ckey">Regulación RNPA:</div><div class="cval">ANMAT/INAL + SENASA. 30-90 días.</div></div>
+          <div class="cmp-row"><div class="ckey">Calificación global:</div><div class="cval" style="color:#1C3A5E;font-weight:700">65/100 · VIABLE — AÑO 5</div></div>
+        </div>
       </div>
     </div>
 
@@ -2081,7 +2556,8 @@
         <strong style="color:#fff">Año 1 — 🇵🇪 Perú:</strong> Canal HoReCa Lima con pasta seca artesanal. Arancel 0% CAN. 2 días de tránsito. Mercado sin competencia colombiana. Validar el modelo exportador.<br>
         <strong style="color:#fff">Año 2 — 🇸🇻 El Salvador:</strong> Hub centroamericano. Desde San Salvador distribuir a Guatemala, Honduras, Nicaragua (MCCA). 46M consumidores regionales con mismo TLC 0%.<br>
         <strong style="color:#fff">Año 3 — 🇲🇽 México:</strong> El mercado más grande de AL (USD 1.4B en pasta). TLC desde 1995 = arancel 0% + IVA 0%. HoReCa CDMX y Guadalajara. Potencial de escala 10x vs Perú.<br>
-        <strong style="color:#fff">Año 4 — 🇧🇷 Brasil:</strong> El mayor consumidor de pasta de AL (6 kg per cápita). 213M habitantes. 41% prefieren cocina italiana. ACE 59. Entrada por pasta seca HORECA São Paulo.</div>
+        <strong style="color:#fff">Año 4 — 🇧🇷 Brasil:</strong> El mayor consumidor de pasta de AL (6 kg per cápita). 213M habitantes. 41% prefieren cocina italiana. ACE 59. Entrada por pasta seca HORECA São Paulo.<br>
+        <strong style="color:#fff">Año 5 — 🇦🇷 Argentina:</strong> 2do mayor consumidor de pasta del mundo (14 kg/cápita). 130 años de herencia italiana. ACE-72 arancel 0%. Buenos Aires = mecca gastronómica. Entrar SOLO cuando la macro se estabilice — operar en USD.</div>
       <div style="font-size:13px;color:#d0e0f0;line-height:1.9">
         <strong style="color:#fff">Año 1:</strong> Enfocar TODOS los recursos en <span style="color:#c8860a;font-weight:700">Perú</span>. Canal HoReCa Lima con pasta seca artesanal. Validar el mercado, consolidar el importador y construir credibilidad de marca.<br>
         <strong style="color:#fff">Año 2:</strong> Con Perú establecido, abrir <span style="color:#7dc461;font-weight:700">El Salvador</span> como segundo mercado. Usar San Salvador como hub para Centroamérica. El cliente de Hyatt San Salvador abre la puerta a Hyatt Guatemala y Hyatt Costa Rica.<br>
@@ -2097,7 +2573,7 @@
         </div>
     </section>
 
-    <!-- 4. Log&iacute;stica de Exportaci&oacute;n -->
+        <!-- 4. Log&iacute;stica de Exportaci&oacute;n -->
     <section id="exportacion" class="section bg-dark">
         <div class="container">
             <h2 class="section-title text-light">Prototipo de Log&iacute;stica de Exportaci&oacute;n</h2>
