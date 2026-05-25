@@ -1,0 +1,20 @@
+node_portable/
+node/
+mingit/
+xpdf/
+cloudflared.exe
+cloudflared2.exe
+*.ps1
+Documentos/
+temp_docx/
+IMAGENES/
+deploy/
+.claude/
+settings.json
+settings.local.json
+assets/presentacion_mexico.txt
+assets/video_castello.mp4
+video de castello.mp4
+Presentación cultura y tradiciones de México fotográfico moderno verde.pdf
+Documento A4 Resumen ejecutivo Negocios Moderno Blanco.pdf
+contenido pagina web.pdf
