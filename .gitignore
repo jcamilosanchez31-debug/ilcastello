@@ -1,0 +1,24 @@
+# Exclude large binary files not needed for web deployment
+cloudflared.exe
+cloudflared2.exe
+node.zip
+mingit.zip
+xpdf.zip
+temp.zip
+node/
+mingit/
+xpdf/
+temp_docx/
+IMAGENES/
+*.docx
+Il_Castello_Proyecto.html
+Actualizado.html
+IlCastello_Peru_ElSalvador_Mexico_Internacionalizacion (3).html
+IlCastello_PowerBI_4Paises_v2 (1) (1).xlsx
+Presentación cultura y tradiciones de México fotográfico moderno verde.pdf
+video de castello.mp4
+contenido pagina web.pdf
+pdf_text.txt
+docx_text.txt
+docx_output.html
+~$*
